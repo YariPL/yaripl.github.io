@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+#portfolio {
+  background: cyan; }
+  #portfolio .selector {
+    display: flex;
+    justify-content: space-around;
+    padding: 35px 0; }
+    #portfolio .selector .selectorButtons {
+      background: #878f9d;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer; }
+  #portfolio .gallery .singleProject {
+    display: flex;
+    flex-direction: column;
+    background: gray;
+    animation-duration: 1s;
+    animation-name: fadeIn;
+    margin: 0 auto; }
+    #portfolio .gallery .singleProject img {
+      max-width: 100%; }
+@keyframes fadeIn {
+  0% {
+    opacity: 0.2; }
+  25% {
+    opacity: 0.4; }
+  50% {
+    opacity: 0.6; }
+  75% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1; } }
+#contact {
+  height: 100vh;
+  width: 100vw;
+  background: lightgreen;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  #contact .formTitle {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px; }
+  #contact .form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 50vh;
+    justify-content: space-between;
+    width: 80%; }
+    #contact .form input, #contact .form textarea {
+      width: 100%;
+      border-radius: 5px;
+      border: none;
+      padding: 10px;
+      box-sizing: border-box;
+      margin-bottom: 10px; }
+    #contact .form textarea {
+      height: 200px; }
+    #contact .form .button {
+      margin-top: 10px; }
+      #contact .form .button button {
+        border: none;
+        padding: 10px;
+        background: #5a9a9a;
+        color: white;
+        border-radius: 3px; }
+
+* {
+  font-family: 'Raleway', sans-serif; }
+
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0; }
+
+#root {
+  width: 100%;
+  height: 100%; }
+  #root .main {
+    width: 100%;
+    height: 100%; }
+    #root .main #header .burger {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      display: inline-block;
+      cursor: pointer;
+      z-index: 2; }
+      #root .main #header .burger .bar1, #root .main #header .burger .bar2, #root .main #header .burger .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: wheat;
+        margin: 6px 0;
+        transition: 0.4s; }
+    #root .main #header .change .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px); }
+    #root .main #header .change .bar2 {
+      opacity: 0; }
+    #root .main #header .change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px); }
+    #root .main #header .menu {
+      background: #636077;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+      font-family: verdana;
+      position: fixed;
+      font-size: 60px;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      left: -100%;
+      opacity: 0; }
+      #root .main #header .menu .menuItem {
+        padding-top: 10px; }
+        #root .main #header .menu .menuItem a {
+          text-decoration: none;
+          color: white;
+          color: #ecdec3;
+          cursor: pointer; }
+        #root .main #header .menu .menuItem a:hover {
+          color: #225527; }
+    #root .main #header .showMenu {
+      animation-name: move;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards; }
+    #root .main #header .hideMenu {
+      animation-name: hide;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards; }
+@keyframes move {
+  from {
+    left: -100%; }
+  to {
+    left: 0; } }
+@keyframes hide {
+  from {
+    left: 0; }
+  to {
+    left: -100%; } }
+    #root .main #homePage {
+      width: 100vw;
+      height: 100vh;
+      background: #c94b4b;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #c94b4b, #4b134f);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #c94b4b, #4b134f);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: #273043; }
+      #root .main #homePage .particles {
+        height: 100%;
+        width: 100%; }
+      #root .main #homePage .title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        color: #ecdec3; }
+        #root .main #homePage .title .name {
+          text-align: center;
+          font-size: 2em; }
+        #root .main #homePage .title .job {
+          text-align: center;
+          font-size: 1.3em; }
+    #root .main #about {
+      height: 100vh;
+      width: 100vw;
+      background: #c94b4b;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #c94b4b, #4b134f);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #c94b4b, #4b134f);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+      #root .main #about .aboutBlock {
+        display: flex;
+        flex-direction: column;
+        background: red;
+        align-items: center;
+        height: 100%;
+        justify-content: flex-start;
+        top: margin-top; }
+        #root .main #about .aboutBlock .photo {
+          text-align: center; }
+          #root .main #about .aboutBlock .photo img {
+            max-width: 45%;
+            border-radius: 50%; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,40 @@
+#portfolio {
+	//height:100vh;
+	background:cyan;
+	.selector {
+		//background: green;
+		display: flex;
+		justify-content: space-around;
+		padding: 35px 0;
+		.selectorButtons {
+			background: #878f9d;
+			color: white;
+			padding: 10px;
+			border-radius: 5px;
+			cursor:pointer;
+		}
+	}
+	.gallery {
+		.singleProject {
+			display: flex;
+			flex-direction:column;
+			background: gray;
+			animation-duration: 1s;
+			animation-name: fadeIn;
+			margin:0 auto;
+			img {
+				max-width: 100%;
+			}
+		
+		}
+
+		@keyframes fadeIn {
+			0%   {opacity: 0.2;}
+			25%  {opacity: 0.4;}
+			50%  {opacity: 0.6;}
+			75%  {opacity: 0.8;}
+			100% {opacity: 1;}
+		}
+	}
+	
+}
