@@ -55,7 +55,7 @@ body, html {
 			// menu
 			.menu {
 				background: #636077;
-				width: 100vw;
+				width: 100%;
 				height: 100vh;
 				display: flex;
 				flex-direction: column;
@@ -74,8 +74,7 @@ body, html {
 					a {
 						text-decoration:none;
 						color:white;
-															color:#ecdec3;
-
+						color:#ecdec3;
 						cursor:pointer;
 					}
 					a:hover {
@@ -103,7 +102,7 @@ body, html {
 			}
 		}
 		#homePage {
-			width:100vw;
+			width:100%;
 			height:100vh;
 			//background-image: linear-gradient(to right top, #845ec2, #646cc5, #4875c1, #367cb7, #3880aa, #3d8aa4, #50929c, #679896, #84a597, #a2b19d, #bebdaa, #d5cabd);
 			background: #c94b4b; /* fallback for old browsers */
@@ -132,7 +131,7 @@ body, html {
 			}
 		}
 		#about {
-			height: 100vh;
+			height: 100%;
 			width:100vw;
 			background: #c94b4b; /* fallback for old browsers */
 			background: -webkit-linear-gradient(to right, #c94b4b, #4b134f); /* Chrome 10-25, Safari 5.1-6 */
