@@ -6,6 +6,7 @@ export class Portfolio extends React.Component {
 		this.state = {
 			//defaultSortValue: 'all',
 			currentSortData:[],
+			currentCategory:'all',
 			projectsData: [{
 				title:'project1',
 				category:['all','js','react'],
@@ -61,12 +62,14 @@ export class Portfolio extends React.Component {
 	}
 
 	sortProjects(e) {
-		
-		let singleProject = null;
-		let singleProjectArray = [];
+		this.setState({
+			currentCategory: e
+		});
+		// let singleProject = null;
+		// let singleProjectArray = [];
 		//console.log(this.state);
 		//console.log(`hello ${e}`);
-		for(let i=0;i<this.state.projectsData.length;i++){
+		/* for(let i=0;i<this.state.projectsData.length;i++){
 			for(let y=0;y<this.state.projectsData[i].category.length;y++){
 				//console.log(this.state.projectsData[i])
 				if(this.state.projectsData[i].category[y] === e) {
@@ -81,12 +84,12 @@ export class Portfolio extends React.Component {
 					
 				}
 			}
-		}
+		} */
 		document.querySelector('.gallery').innerHTML = singleProjectArray.join('');
 	}
 	componentDidMount() {
 		// run initial gallery sort
-    	this.sortProjects('node');
+    	//this.sortProjects('node');
     }
 	render() {
 		return (
@@ -106,6 +109,15 @@ export class Portfolio extends React.Component {
 					</div>
 				</div>
 				<div className='gallery'>
+					{this.state.projectsData.map(singleProject => 
+						<div class='singleProject'>
+							<div class='title'>
+								{singleProject.title}
+							</div>
+						<img src={singleProject.image} alt='projectName' />
+							
+						</div>
+					)}
 				</div>
 			</div>
 		)
