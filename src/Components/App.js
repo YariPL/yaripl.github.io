@@ -1,10 +1,10 @@
 import React from 'react';
-import './css/main.css';
-import About from './About';
-import Portfolio from './Portfolio';
-import Contact from './Contact';
-import Header from './Header';
-import Home from './Home';
+import './../css/main.css';
+import {About} from './About';
+import {Portfolio} from './Portfolio';
+import {Contact} from './Contact';
+import {Header} from './Header';
+import {Home} from './Home';
 
 export class App extends React.Component  {
 	constructor(props) {

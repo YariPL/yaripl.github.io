@@ -1,9 +1,8 @@
 import React from 'react';
-import './css/main.css';
 import axios from 'axios';
 
 
-class Contact extends React.Component {
+export class Contact extends React.Component {
 	state = {
         name: '',
         message: '',
