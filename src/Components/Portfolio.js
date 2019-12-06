@@ -65,28 +65,7 @@ export class Portfolio extends React.Component {
 		this.setState({
 			currentCategory: e
 		});
-		// let singleProject = null;
-		// let singleProjectArray = [];
-		//console.log(this.state);
-		//console.log(`hello ${e}`);
-		/* for(let i=0;i<this.state.projectsData.length;i++){
-			for(let y=0;y<this.state.projectsData[i].category.length;y++){
-				//console.log(this.state.projectsData[i])
-				if(this.state.projectsData[i].category[y] === e) {
-
-					//console.log('yes');
-					singleProject = `<div class='singleProject'>
-					<div class='title'>${this.state.projectsData[i].title}</div>
-					<img src='${this.state.projectsData[i].image}'></div>`
-					// fullfill current data with good values
-					
-					singleProjectArray.push(singleProject);
-					
-				}
-			}
-		} */
-		document.querySelector('.gallery').innerHTML = singleProjectArray.join('');
-	}
+    }
 	componentDidMount() {
 		// run initial gallery sort
     	//this.sortProjects('node');
@@ -110,13 +89,14 @@ export class Portfolio extends React.Component {
 				</div>
 				<div className='gallery'>
 					{this.state.projectsData.map(singleProject => 
-						<div class='singleProject'>
-							<div class='title'>
-								{singleProject.title}
-							</div>
-						<img src={singleProject.image} alt='projectName' />
-							
-						</div>
+						singleProject.category.map((category,index) => 
+							category === this.state.currentCategory ? 
+								<div key={index} className="singleProject">
+									<div className="title">{singleProject.title}</div>
+									<img src={singleProject.image} alt="projectName" />
+								</div>
+								: console.log('not this category')
+						)
 					)}
 				</div>
 			</div>
