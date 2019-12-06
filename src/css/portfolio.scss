@@ -15,6 +15,11 @@
 		}
 	}
 	.gallery {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-column-gap: 1%;
+		grid-row-gap: 2%;
+		padding: 0 1%;
 		.singleProject {
 			display: flex;
 			flex-direction:column;
