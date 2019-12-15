@@ -1,5 +1,4 @@
 import React from 'react';
-import { Transition, animated } from "react-spring";
 
 export class Portfolio extends React.Component {
 	constructor(props) {
@@ -89,29 +88,16 @@ export class Portfolio extends React.Component {
 					</div>
 				</div>
 				<div className='gallery'>
-
-
-					<Transition
-						native
-						keys={this.state.items}
-						from={{ opacity: 0, height: 0 }}
-						enter={{ opacity: 1, height: 100 }}
-						leave={{ opacity: 0, height: 0 }}>
-
-						{this.state.projectsData.map(singleProject => 
-							singleProject.category.map((category,index) => 
-								category === this.state.currentCategory ? 
-									<div key={index} className="singleProject">
-										<div className="title">{singleProject.title}</div>
-										<img src={singleProject.image} alt="projectName" />
-									</div>
-									: console.log('not this category')
-							)
-						)}
-					</Transition>
-
-
-
+					{this.state.projectsData.map(singleProject => 
+						singleProject.category.map((category,index) => 
+							category === this.state.currentCategory ? 
+								<div key={index} className="singleProject">
+									<div className="title">{singleProject.title}</div>
+									<img src={singleProject.image} alt="projectName" />
+								</div>
+								: console.log('not this category')
+						)
+					)}
 				</div>
 			</div>
 		)
