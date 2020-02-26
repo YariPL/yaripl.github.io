@@ -36,26 +36,6 @@ export class Portfolio extends React.Component {
 				title:'project6',
 				category:['all','node'],
 				image:'./6.jpg'
-			}
-			,{
-				title:'project7',
-				category:['all','js'],
-				image:'./7.jpg'
-			}
-			,{
-				title:'project8',
-				category:['all','js','react'],
-				image:'./8.jpg'
-			}
-			,{
-				title:'project9',
-				category:['all','react'],
-				image:'./9.jpg'
-			}
-			,{
-				title:'project10',
-				category:['all','js','react'],
-				image:'./10.jpg'
 			}]
 		}
 		this.sortProjects = this.sortProjects.bind(this)
@@ -73,29 +53,13 @@ export class Portfolio extends React.Component {
 	render() {
 		return (
 			<div id='portfolio'>
-				<div className='selector'>
-					<div className='allP selectorButtons' onClick={() => this.sortProjects('all')}>
-					ALL
-					</div>
-					<div className='javascriptP selectorButtons' onClick={() => this.sortProjects('js')}>
-					Javascript
-					</div>
-					<div className='reactjsP selectorButtons' onClick={() => this.sortProjects('react')}>
-					React.js
-					</div>
-					<div className='nodejsP selectorButtons' onClick={() => this.sortProjects('node')}>
-					Node.js
-					</div>
-				</div>
 				<div className='gallery'>
 					{this.state.projectsData.map(singleProject => 
 						singleProject.category.map((category,index) => 
-							category === this.state.currentCategory ? 
-								<div key={index} className="singleProject">
-									<div className="title">{singleProject.title}</div>
-									<img src={singleProject.image} alt="projectName" />
-								</div>
-								: console.log('not this category')
+							<div key={index} className="singleProject">
+								<div className="title">{singleProject.title}</div>
+								<img src={singleProject.image} alt="projectName" />
+							</div>
 						)
 					)}
 				</div>
