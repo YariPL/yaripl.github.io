@@ -26,7 +26,7 @@ export class Header extends React.Component {
                     <div className="bar3"></div>
                 </div>
 
-                <div className='menu hideMenu'>
+                <div className='menu'>
                     <div className='menuItem'><a href='#homePage'>Home</a></div>
                     <div className='menuItem'><a href='#about'>About</a></div>
                     <div className='menuItem'><a href='#portfolio'>Portfolio</a></div>

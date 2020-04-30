@@ -1,6 +1,7 @@
 #portfolio {
 	//height:100vh;
 	background:cyan;
+	background:#273043;
 	padding: 3% 0%;
 	.selector {
 		//background: green;
@@ -30,10 +31,32 @@
 			animation-fill-mode: forwards;
 			margin:0 auto;
 			opacity:0;
+			position: relative;
+			overflow: hidden;width: 100%;
+    		height: 300px;
+
 			// border:10px solid black;
 			// transition: display 15s;
-			img {
+			.title {
+				position: absolute;
+				top: -20px;
+				/* background: red; */
+				width: 100%;
+				text-align: center;
+				z-index: 999;
+				color: white;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				font-size: 40px;
+			}
+			.title:hover {
+				top: 0;
+			}
+			.bodyS {
 				max-width: 100%;
+				width: 100%;
+				height: 100%;
 			}
 		
 		}
