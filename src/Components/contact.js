@@ -9,7 +9,7 @@ export const Contact = () => {
     message: '',
     email: '',
     sent: false,
-    buttonText: 'Send Message'
+    buttonText: 'Send'
   })
 
     const formSubmit = (e) => {
