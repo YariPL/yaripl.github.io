@@ -27,9 +27,9 @@ export const Contact = () => {
         buttonText: 'Sending...'
       })
 
-      axios.post('http://localhost:8000/')
+      axios.post('http://localhost:8000/',data)
         .then(res => {
-          this.setState({ sent: true }, this.resetForm())
+          setContactState({ ...contactState, sent: true }, resetForm())
         })
         .catch(() => {
           console.log('Message not sent')

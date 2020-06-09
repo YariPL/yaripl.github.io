@@ -32,7 +32,6 @@ app.post('/', (req, res) => {
 
     var smtpTransport = nodemailer.createTransport({
         service: 'Gmail',
-        port: 465,
         auth: {
             user: process.env.mail,
             pass: process.env.password
@@ -40,18 +39,21 @@ app.post('/', (req, res) => {
     });
 
     var mailOptions = {
-        from: 'yari.lune@gmail.com',//data.email,
+        from: data.email,
         to: 'yaroslav.khudchenko.dev@gmail.com',
-        subject: 'ENTER_YOUR_SUBJECT',
-        html: 'hello'//`<p>${data.name}</p>
-         // <p>${data.email}</p>
-         // <p>${data.message}</p>`
+        subject: 'contact from ' + data.email,
+        html: data.message 
     };
 
+    console.log(smtpTransport)
+    console.log('-------')
+    console.log(mailOptions)
     smtpTransport.sendMail(mailOptions,
         (error, response) => {
             if (error) {
-                res.send(error)
+                res.send(error);
+                res.send(response);
+                console.log('response')
             } else {
                 res.send('Success')
             }
