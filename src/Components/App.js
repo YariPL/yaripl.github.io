@@ -6,20 +6,13 @@ import {Contact} from './Contact';
 import {Header} from './Header';
 import {Home} from './Home';
 
-export class App extends React.Component  {
-	constructor(props) {
-		super(props);
-		this.state = {}
-	}
-	render() {
-	  return (
-	    <div className="main">
-	    	<Header />
-	    	<Home />
-	    	<About />
-	    	<Portfolio />
-	    	<Contact />
-	    </div>
-	  );
-  	}
-}
+export const App = () =>
+	<div className="main">
+		<Header />
+		<Home />
+		<About />
+		<Portfolio />
+		<Contact />
+	</div>
+	 
+  
