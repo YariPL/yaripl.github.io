@@ -41,7 +41,9 @@ export const Contact = () => {
           onSubmit={e => e.preventDefault()}
         >
           <textarea
-            onChange={e => setContactState({...contactState, message: e.target.value })}
+            onChange={e => setContactState(
+              {...contactState, message: e.target.value })
+            }
             name="message"
             type="text"
             placeholder="message"
@@ -50,7 +52,9 @@ export const Contact = () => {
           />
 
           <input
-            onChange={e => setContactState({...contactState, name: e.target.value })}
+            onChange={e => 
+              setContactState({...contactState, name: e.target.value })
+            }
             name="name"
             type="text"
             placeholder="name"
@@ -58,7 +62,9 @@ export const Contact = () => {
           />
 
           <input
-            onChange={e => setContactState({...contactState, email: e.target.value })}
+            onChange={e => 
+              setContactState({...contactState, email: e.target.value })
+            }
             name="email"
             type="email"
             placeholder="email"
@@ -76,4 +82,3 @@ export const Contact = () => {
     );
 }
 
-export default Contact;
