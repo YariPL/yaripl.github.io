@@ -1,4 +1,6 @@
+
 import React, { useState } from 'react';
+import axios from 'axios';
 
 export const Contact = () => {
 
@@ -14,10 +16,24 @@ export const Contact = () => {
     	// stop page reloading
 	  e.preventDefault()
 
+      let data = { 
+        name:contactState.name,
+        message:contactState.message,
+        email:contactState.email
+      }
+
       setContactState({
         ...contactState,
         buttonText: 'Sending...'
       })
+
+      axios.post('http://localhost:8000/')
+        .then(res => {
+          this.setState({ sent: true }, this.resetForm())
+        })
+        .catch(() => {
+          console.log('Message not sent')
+        })
 
 	  
 	}
@@ -73,7 +89,7 @@ export const Contact = () => {
           />
 
           <div className="button">
-            <button type="submit" className="button button-primary">
+            <button type="submit" className="button button-primary" onClick={formSubmit}>
               {contactState.buttonText}
             </button>
           </div>
