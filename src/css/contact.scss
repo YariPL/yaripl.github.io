@@ -1,43 +1,48 @@
 #contact {
-	height: 100vh;
-	width: 100%; //100vw;
-	background: lightgreen;
-	position: relative;
-	display: flex;
-	// flex-direction: column;
-	justify-content: center;
+	    height: 100vh;
+    width: 100%;
+    background: lightgreen;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 	.formTitle{
 		text-align: center;
 		font-size: 22px;
 		margin-bottom: 20px;
 	}
-    .form {
+	#contactContainer {
 		display: flex;
-		flex-direction: column;
-		margin: 0 auto;
-		height: 50vh;
-		justify-content: space-between;
-		width: 80%;
-		input, textarea {
-			width: 100%;
-			border-radius: 5px;
-			border: none;	
-			padding: 10px;
-			box-sizing: border-box;
-			margin-bottom: 10px;
-		}
-		textarea {
-			height: 200px;
-		}
-		.button {
-			margin-top: 10px;
-			button {
-				border: none;
-				padding: 10px;
-				background: #5a9a9a;
-				color: white;
-				border-radius: 3px;
+		width: 90%;
+		background: red;
+		justify-content: space-evenly;
+		.formContainer {
+			width: 70%;
+
+		
+			.form {
+				input, textarea {
+					width: 100%;
+					border-radius: 5px;
+					border: none;	
+					padding: 10px;
+					box-sizing: border-box;
+					margin-bottom: 10px;
+				}
+				textarea {
+					height: 200px;
+				}
+				.button {
+					margin-top: 10px;
+					button {
+						border: none;
+						padding: 10px;
+						background: #5a9a9a;
+						color: white;
+						border-radius: 3px;
+					}
+				}
 			}
 		}
-    }
+	}
 }

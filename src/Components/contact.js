@@ -48,55 +48,57 @@ export const Contact = () => {
     })
 	}
 
-		return (
-      <div id="contact">
-        <div className="formTitle">Contact</div>
-        <div id='formContainer'>
+	return (
+      	<div id="contact">
+			<div className="formTitle">Contact</div>
+				<div id='contactContainer'>
         
-        <div className='formContainer'>
-        <form
-          action="/contact"
-          className="form"
-          onSubmit={e => e.preventDefault()}
-        >
-          <textarea
-            onChange={e => setContactState(
-              {...contactState, message: e.target.value })
-            }
-            name="message"
-            type="text"
-            placeholder="message"
-            value={contactState.message}
-            required
-          />
+       			<div className='formContainer'>
+					<form
+						action="/contact"
+						className="form"
+						onSubmit={e => e.preventDefault()}
+					>
+						<textarea
+							onChange={e => setContactState(
+								{...contactState, message: e.target.value })
+							}
+							name="message"
+							type="text"
+							placeholder="message"
+							value={contactState.message}
+							required
+						/>
 
-          <input onChange={e => 
-              setContactState({...contactState, name: e.target.value })
-            }
-            name="name"
-            type="text"
-            placeholder="name"
-            value={contactState.name}
-          />
+						<input 
+							onChange={e => 
+								setContactState({...contactState, name: e.target.value })
+							}
+							name="name"
+							type="text"
+							placeholder="name"
+							value={contactState.name}
+						/>
 
-          <input
-            onChange={e => 
-              setContactState({...contactState, email: e.target.value })
-            }
-            name="email"
-            type="email"
-            placeholder="email"
-            required
-            value={contactState.email}
-          />
+						<input
+							onChange={e => 
+								setContactState({...contactState, email: e.target.value })
+							}
+							name="email"
+							type="email"
+							placeholder="email"
+							required
+							value={contactState.email}
+						/>
 
-          <div className="button">
-            <button type="submit" className="button button-primary" onClick={formSubmit}>
-              {contactState.buttonText}
-            </button>
-          </div>
-        </form>
-          </div>
+						<div className="button">
+							<button type="submit" className="button button-primary" 
+								onClick={formSubmit}>
+								{contactState.buttonText}
+							</button>
+						</div>
+					</form>
+          		</div>
             <div className='socialMediaContainer'>
               socialmedia
             </div>
