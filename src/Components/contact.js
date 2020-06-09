@@ -51,6 +51,9 @@ export const Contact = () => {
 		return (
       <div id="contact">
         <div className="formTitle">Contact</div>
+        <div id='formContainer'>
+        
+        <div className='formContainer'>
         <form
           action="/contact"
           className="form"
@@ -67,8 +70,7 @@ export const Contact = () => {
             required
           />
 
-          <input
-            onChange={e => 
+          <input onChange={e => 
               setContactState({...contactState, name: e.target.value })
             }
             name="name"
@@ -94,6 +96,12 @@ export const Contact = () => {
             </button>
           </div>
         </form>
+          </div>
+            <div className='socialMediaContainer'>
+              socialmedia
+            </div>
+
+        </div>
       </div>
     );
 }
