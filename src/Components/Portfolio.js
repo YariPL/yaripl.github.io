@@ -6,21 +6,23 @@ import image3 from "./../assets/project3.png";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 export const Portfolio = () => {
 	const [portfolioState, setPortfolioState] = useState({
-		projectsData: [
-		{
-			title: "404 TREX 3d clone",
-			image: image1,
-		},
-		{
-			title: "Task manager",
-			image: image2,
-		},
-		{
-			title: "Pathfinding visualizer",
-			image: image3,
-		},
-		],
-	});
+    projectsData: [
+      {
+        title: "404 TREX 3d clone",
+        image: image1,
+      },
+      {
+        title: "Task manager",
+        image: image2,
+        techStack: ["react", "scss", "mongodb", "nodejs", "express"],
+        videoUrl: "https://www.youtube.com/embed/noneMROp_E8"
+      },
+      {
+        title: "Pathfinding visualizer",
+        image: image3,
+      },
+    ],
+  });
 	const [activeProject, setActiveProject] = useState([]);
 	const [showProjectDescr, setShowProjectDescr] = useState(false);
 	
