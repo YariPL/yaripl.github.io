@@ -48,7 +48,14 @@ export const Portfolio = () => {
 								<img src={singleProject.image} alt='project preview' />
 							</div>
 						</div>
-						</div>
+						{showProjectDescr &&
+							<div className='bodyD'>
+
+										
+
+							</div>
+						}
+					</div>
 				)}
 			</div>
 		</div>

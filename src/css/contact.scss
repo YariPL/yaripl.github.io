@@ -18,6 +18,7 @@
 		//background: red;
 		justify-content: space-evenly;
 		margin: 0 auto;
+		flex-direction: row-reverse;
 		.formContainer {
 			width: 40%;
 
@@ -57,9 +58,21 @@
 			color: white;
 			#socialHello {
 				font-size:50px;
-			}
+				margin-bottom: 30px;			}
 			#socialMail {
-				font-size: 43px;
+				//font-size: 43px;
+			}
+			#socialAppsPart {
+				#socialAppsHello {
+					display: flex;
+					#socialAppsApps {
+						margin-left: 20px;
+						svg {
+							font-size: 40px;
+						}
+						
+					}
+				}
 			}
 		}
 	}
