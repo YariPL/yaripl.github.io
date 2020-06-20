@@ -14,12 +14,12 @@
 	}
 	#contactContainer {
 		display: flex;
-		width: 90%;
+		width: 75%; // 90%;
 		//background: red;
 		justify-content: space-evenly;
 		margin: 0 auto;
 		.formContainer {
-			width: 30%;
+			width: 40%;
 
 		
 			.form {
@@ -52,7 +52,15 @@
 			}
 		}
 		.socialMediaContainer {
-			    width: 30%;
+			width: 55%;
+			font-size: 35px;
+			color: white;
+			#socialHello {
+				font-size:50px;
+			}
+			#socialMail {
+				font-size: 43px;
+			}
 		}
 	}
 }

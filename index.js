@@ -16,6 +16,7 @@ app.use(cors());
 app.listen(port, () => {
     console.log(`Server is running on the port ${port}`);
 });
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
 
 
 app.get('/', (req, res) => {
@@ -26,8 +27,9 @@ app.get('/', (req, res) => {
 
 app.post('/', (req, res) => {
 
-    console.log('in the sec req')
+    /* console.log('in the sec req')
 
+    console.log('-----------------') */
     var data = req.body;
 
     var smtpTransport = nodemailer.createTransport({
@@ -40,20 +42,22 @@ app.post('/', (req, res) => {
 
     var mailOptions = {
         from: data.email,
-        to: 'yaroslav.khudchenko.dev@gmail.com',
+        to: 'yaroslav.khudchenko@gmail.com',
         subject: 'contact from ' + data.email,
         html: data.message 
     };
-
+/* 
     console.log(smtpTransport)
     console.log('-------')
-    console.log(mailOptions)
+    console.log(mailOptions) */
     smtpTransport.sendMail(mailOptions,
         (error, response) => {
             if (error) {
                 res.send(error);
                 res.send(response);
                 console.log('response')
+                console.log(error)
+                console.log(response)
             } else {
                 res.send('Success')
             }
