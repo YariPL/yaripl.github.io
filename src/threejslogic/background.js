@@ -24,7 +24,7 @@ const Background = () => {
 		antialias: true
 	});
 
-	renderer.setClearColor(0xe6cbb2); // to have light background color
+	renderer.setClearColor(0x273043); // to have light background color
 renderer.setSize( window.innerWidth, window.innerHeight );
 	document.body.appendChild( renderer.domElement );
 

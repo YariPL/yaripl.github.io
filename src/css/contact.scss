@@ -1,11 +1,12 @@
 #contact {
 	    height: 100vh;
     width: 100%;
-    background: #273043;
+    // background: #273043;
     position: relative;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+	flex-direction: column;
+	z-index: 1;
 	.formTitle{
 		text-align: center;
 		font-size: 30px;

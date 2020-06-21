@@ -16,6 +16,7 @@
         margin: 0 auto;
         .photo {
             text-align: center;
+            z-index: 1;
             width: 40%;
             img {
                 max-width: 45%;
@@ -24,6 +25,7 @@
         }
         .text {
             // text-align: center;
+            z-index: 1;
             width: 60%;
             color: white;
             font-size: 35px;

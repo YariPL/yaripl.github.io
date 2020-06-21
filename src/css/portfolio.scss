@@ -38,6 +38,7 @@
 				overflow: hidden;
 				width: 100%;
 				height: fit-content;
+				z-index: 1;
 				.bodyS {
 					max-width: 100%;
 					width: 100%;
@@ -113,6 +114,7 @@
 			animation-duration: 2s;
 			background: black;
 			.bodyDVideo {
+				z-index: 1;
 				width: 30%;
 				padding: 0 20px;
 				box-sizing: border-box;
@@ -121,6 +123,7 @@
 				}
 			}
 			.bodyDDescr {
+				z-index: 1;
 				display: flex;
 				width: 70%;
 				padding: 0 20px;
