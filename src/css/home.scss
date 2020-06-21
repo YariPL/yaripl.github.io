@@ -1,4 +1,5 @@
 #homePage {
+    z-index: 1;
     width:100%;
     height:100vh;
     //background-image: linear-gradient(to right top, #845ec2, #646cc5, #4875c1, #367cb7, #3880aa, #3d8aa4, #50929c, #679896, #84a597, #a2b19d, #bebdaa, #d5cabd);
@@ -27,4 +28,12 @@
             font-size: 1.3em;
         }
     }
+}
+
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
 }

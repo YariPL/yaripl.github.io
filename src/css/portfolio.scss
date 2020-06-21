@@ -22,18 +22,18 @@
 		//padding: 0 1%;
 		.projects {
 			display: grid;
-			grid-template-columns: auto 33.3% 33.3%;
-			grid-column-gap: 1%;
+			grid-template-columns: auto auto auto;
+			// grid-column-gap: 1%;
 		
 			.singleProject {
 				display: flex;
 				flex-direction:column;
 				background: gray;
-				animation-duration: 4s;
+				/* animation-duration: 4s;
 				animation-name: fadeIn;
-				animation-fill-mode: forwards;
+				animation-fill-mode: forwards; */
 				margin:0 auto;
-				opacity:0;
+				//opacity:0;
 				position: relative;
 				overflow: hidden;
 				width: 100%;
@@ -72,6 +72,9 @@
 				}
 			
 			}
+			.notActiveSingleProject {
+				filter:brightness(0.4)
+			}
 			.singleProject:hover {
 				//transform:scale(.9);
 			}
@@ -87,30 +90,84 @@
 				100% {opacity: 1;}
 			}
 		}
+		.openProjects {
+			padding: 10px;
+			background: black;
+		}
+		@keyframes down {
+			from {
+				opacity: 0;;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+
 		.bodyD {
 			display: flex;
+			padding: 10px;
+			box-sizing: border-box;
+			//background: green; // for test
+			//transition: ease-in 3s;
+			animation-name: down;
+			animation-duration: 2s;
+			background: black;
 			.bodyDVideo {
 				width: 30%;
+				padding: 0 20px;
+				box-sizing: border-box;
 				video {
-					width: 90%;
-					padding: 15px;
-					box-sizing: border-box;
+					width: 100%;
 				}
 			}
 			.bodyDDescr {
 				display: flex;
 				width: 70%;
+				padding: 0 20px;
+				box-sizing: border-box;
 				.bodyDDescrDescr {
-					width:45%;
-				}
-				.bodyDDescrStack {
-					width: 45%;
-				}
-				.bodyDDescrCheck {
+					width:50%;
+					font-size: 20px;
+					text-align: center;
+					color: white;
+					line-height: 30px;
 					display: flex;
 					flex-direction: column;
-					width: 10%;
+					justify-content: space-around;
+					.bodyDDescrCheck {
+						display: flex;
+						justify-content: center;
+						/* background: tan; */
+						width: 100%;
+						justify-content: space-evenly;
+						margin-bottom: 0px;
+						div {
+							background: #000000;
+							padding: 10px;
+							cursor: pointer;
+							color: white;
+						}
+					}
 				}
+				.bodyDDescrStack {
+					width: 50%;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					.stackTitle {
+						color: white;
+						font-size: 30px;
+						margin-bottom: 20px;
+					}
+					.stackImages {
+						display: flex;
+						align-items: center;
+						img {
+							max-width: 25%;
+						}
+					}
+				}
+				
 			}	
 		}
 	}

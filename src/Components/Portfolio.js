@@ -15,28 +15,41 @@ export const Portfolio = () => {
       {
         title: "404 TREX 3d clone",
         image: image1,
+        techStack: [react, sass, mongodb, nodejs /* , "express" */],
+		videoUrl: project2Video,
+		descr: `Game clone of the famous chromes 404 game with the use of Three.js`
       },
       {
         title: "Task manager",
         image: image2,
         techStack: [react, sass, mongodb, nodejs /* , "express" */],
-        videoUrl: project2Video,
+		videoUrl: project2Video,
+		descr: `Task manager project build to control multiple projects with
+					tasks and subtasks. All changes done by user will be reflected
+					immediately.`
       },
       {
         title: "Pathfinding visualizer",
         image: image3,
+        techStack: [react, sass, mongodb, nodejs /* , "express" */],
+		videoUrl: project2Video,
+		descr: `App to visiolize how does pathfinding algorithm dikstra works`
       },
     ],
   });
 	const [activeProject, setActiveProject] = useState([]);
 	const [showProjectDescr, setShowProjectDescr] = useState(false);
+
 	
 	return (
     <div id="portfolio">
       <div className="gallery">
-        <div className="projects">
+        <div className={showProjectDescr ? "openProjects projects" : "projects"}>
           {portfolioState.projectsData.map((singleProject, index) => (
-            <div key={index} className="singleProject">
+            <div
+              key={index}
+              className="singleProject"
+            >
               <div className="bodyS" alt="projectName">
                 <div className="title">
                   <div className="titletitle">{singleProject.title}</div>
@@ -64,18 +77,21 @@ export const Portfolio = () => {
             </div>
             <div className="bodyDDescr">
               <div className="bodyDDescrDescr">
-                Task manager project build to control multiple projects with
-                tasks and subtasks. All changes done by user will be reflected
-                immediately.
+                <div className="bodyDDescrDescrText">
+					{activeProject.descr}
+				</div>
+                <div className="bodyDDescrCheck">
+                  <div className="checkCode">Code</div>
+                  <div className="checkLive">Live</div>
+                </div>
               </div>
               <div className="bodyDDescrStack">
-                {activeProject.techStack.map((e, index) => (
-                  <img src={e} alt="stack" key={index} />
-                ))}
-              </div>
-              <div className="bodyDDescrCheck">
-                <div className="checkCode">Code</div>
-                <div className="checkLive">Live</div>
+                <div className="stackTitle">Technologies:</div>
+                <div className="stackImages">
+                  {activeProject.techStack.map((e, index) => (
+                    <img src={e} alt="stack" key={index} />
+                  ))}
+                </div>
               </div>
             </div>
           </div>
