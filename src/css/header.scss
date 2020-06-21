@@ -2,23 +2,44 @@
 #header {			
     // burger
     .burger {
-        position: fixed;
-        top: 10px;
-        left: 10px;
-        display: inline-block;
+        position: relative;
+        width: 50px;
+        height: 22px;
         cursor: pointer;
-        z-index:2;
+        z-index: 2;
+        right: 20px;
+        top: 20px;
+        position: fixed;
+        top:20px;
+        right: 20px;
         // bars
-        .bar1, .bar2, .bar3 {
+       /*  .bar1, .bar2, .bar3 {
             width: 35px;
             height: 5px;
             background-color: wheat;
             margin: 6px 0;
             transition: 0.4s;
-        }
-        display: none;
+        } */
+        //display: none;
 
     }
+    .burger::before, .burger::after {
+        content: "";
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    -webkit-transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    -o-transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.burger::before {
+    bottom:0;
+}
+    .burger::after {
+    top:0;
+}
     .change {
         .bar1 {
             -webkit-transform: rotate(-45deg) translate(-9px, 6px);
@@ -32,7 +53,7 @@
     }
     // menu
     .menu {
-        background: #636077;
+       /*  background: #636077;
         width: 100%;
         //height: 100vh;
         display: flex;
@@ -50,14 +71,28 @@
 
         justify-content: space-evenly;
         z-index: 1;
-        /* left: -100%; */
         width: 50vw;
         left: 50%;
         transform: translateX(-50%);
         background: rgba(47, 79, 79, .31);
         border-radius: 40px;
         top: 30px;
-        padding: 13px;
+        padding: 13px; */
+        background: #636077;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+         flex-direction: column;
+        font-size: 30px;
+        font-family: verdana;
+        position: fixed;
+        font-size: 60px;
+        align-items: center;
+        //display: none;
+        justify-content: center;
+        z-index:1;
+        left:-100%;
+        // opacity: 0;
 
         .menuItem {
             padding-top:10px;
