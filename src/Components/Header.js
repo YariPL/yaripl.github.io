@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export const Header = () => {
 
@@ -28,16 +29,16 @@ export const Header = () => {
 
         <div className="menu hideMenu">
           <div className="menuItem">
-            <a href="#homePage">Home</a>
+            <AnchorLink href="#homePage">Home</AnchorLink>
+          </div>
+          <div className="menuItem" onClick={toggleBurgerMenu}>
+            <AnchorLink href="#about">About</AnchorLink>
           </div>
           <div className="menuItem">
-            <a href="#about">About</a>
+            <AnchorLink href="#portfolio">Portfolio</AnchorLink>
           </div>
           <div className="menuItem">
-            <a href="#portfolio">Portfolio</a>
-          </div>
-          <div className="menuItem">
-            <a href="#contact">Contact</a>
+            <AnchorLink href="#contact">Contact</AnchorLink>
           </div>
         </div>
       </div>
