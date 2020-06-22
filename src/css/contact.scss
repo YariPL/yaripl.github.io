@@ -66,15 +66,34 @@
 			#socialAppsPart {
 				#socialAppsHello {
 					display: flex;
-					#socialAppsApps {
-						margin-left: 20px;
-						svg {
-							font-size: 40px;
-						}
-						
+					
+				}
+				#socialAppsApps {
+					margin-left: 20px;
+					svg {
+						font-size: 40px;
 					}
+					
+				}
+
+				#cvGrab {
+						p {
+							#downlCVButton {
+								background: #3E131A;
+								padding: 5px 10px;
+								margin-left: 10px;
+								border-radius: 5px;
+								cursor: pointer;
+								/* box-shadow: 3px 4px 5px 4px black, 0px 0px 9px 3px black; */
+								box-shadow: 6px 5px 2px 3px black;
+							}
+						}
 				}
 			}
 		}
 	}
+}
+
+@media (max-width: 768px) {
+	
 }

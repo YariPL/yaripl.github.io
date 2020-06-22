@@ -108,7 +108,7 @@ export const Contact = () => {
         </div>
         <div className="socialMediaContainer">
           <div className="socialBody">
-            <div id="socialHello">Hello, wanna contact me?</div>
+            <div id="socialHello">Hey, wanna contact me?</div>
             <div id="socialMail">Feel free to send me an email</div>
             <div id="socialAppsPart">
               <div id="socialAppsHello">
@@ -120,18 +120,16 @@ export const Contact = () => {
               </div>
 
               <div id="cvGrab">
-                <p>And don't forget to get a copy of my resume.</p>
-                <div
-                  id="downlCVButton"
+                <p>
+                  And don't forget to get a copy of my 
+                  <span id="downlCVButton"
                   onClick={() => {
                     let link = document.createElement("a");
                     link.href = "YaroslavKhudchenkoCV.pdf";
                     link.download = "YaroslavKhudchenkoCV.pdf";
                     link.dispatchEvent(new MouseEvent("click"));
-                  }}
-                >
-                  CV:)
-                </div>
+                  }}>CV</span>
+                </p>
               </div>
             </div>
           </div>

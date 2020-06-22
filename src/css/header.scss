@@ -45,7 +45,7 @@
     .menu {
         
         background: #636077;
-        width: 10%;
+        width: 20%;
         height: 100vh;
         display: flex;
          flex-direction: column;
@@ -57,7 +57,7 @@
         //display: none;
         justify-content: center;
         z-index:1;
-        left:-10%;
+        left:-20%;
         // opacity: 0;
 
         .menuItem {
@@ -85,11 +85,11 @@
         animation-fill-mode: forwards;
     }
     @keyframes move {
-        from {left: -10%;}
+        from {left: -20%;}
         to {left: 0;}
     }
     @keyframes hide {
         from {left: 0;}
-        to {left: -10%;}
+        to {left: -20%;}
     }
 }
