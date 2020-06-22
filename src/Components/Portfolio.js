@@ -1,39 +1,36 @@
 import React, { useState } from 'react';
-
+/* 
 import image1 from './../assets/project1.png';
 import image2 from "./../assets/project2.png";
 import image3 from "./../assets/project3.png";
 import react from './../assets/stack/react.png';
 import sass from './../assets/stack/sass.png';
 import mongodb from './../assets/stack/mongodb.png';
-import nodejs from './../assets/stack/nodejs.png';
+import nodejs from './../assets/stack/nodejs.png'; */
 import project2Video from './../assets/videos/mov_bbb.mp4';
-import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
-export const Portfolio = () => {
+/* import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+ */export const Portfolio = () => {
 	const [portfolioState, setPortfolioState] = useState({
     projectsData: [
       {
-        title: "404 TREX 3d clone",
-        image: image1,
-        techStack: [react, sass, mongodb, nodejs /* , "express" */],
-		videoUrl: project2Video,
-		descr: `Game clone of the famous chromes 404 game with the use of Three.js`
+        title: "404 T-REX 3d clone",
+        techStack: ["three.js", "webpack", "react", "sass"],
+        videoUrl: project2Video,
+        descr: `Clone of the famous chrome's 404 game made in 3D with the help of Three.js framework`,
       },
       {
         title: "Task manager",
-        image: image2,
-        techStack: [react, sass, mongodb, nodejs /* , "express" */],
-		videoUrl: project2Video,
-		descr: `Task manager project build to control multiple projects with
-					tasks and subtasks. All changes done by user will be reflected
-					immediately.`
+        techStack: ["react", "mongodb", "nodejs", "express", "rest", "sass"],
+        videoUrl: project2Video,
+        descr: `Task manager project build to control multiple projects with
+					tasks and subtasks.` /*  All changes done by user will be reflected
+					immediately. */,
       },
       {
         title: "Pathfinding visualizer",
-        image: image3,
-        techStack: [react, sass, mongodb, nodejs /* , "express" */],
-		videoUrl: project2Video,
-		descr: `App to visiolize how does pathfinding algorithm dikstra works`
+        techStack: ["react", "sass"],
+        videoUrl: project2Video,
+        descr: `App to visualize how does pathfinding algorithm works`,
       },
     ],
   });
@@ -77,7 +74,8 @@ export const Portfolio = () => {
                     <div className="stackTitle">Technologies:</div>
                     <div className="stackImages">
                       {singleProject.techStack.map((e, index) => (
-                        <img src={e} alt="stack" key={index} />
+                        /* <img src={e} alt="stack" key={index} />*/
+                        <span>{e}</span>
                       ))}
                     </div>
                   </div>

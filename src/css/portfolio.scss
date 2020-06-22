@@ -39,25 +39,25 @@
 				margin-bottom: 20px;
 				display: flex;
 				align-items: center;
-				height: 260px;
+				height: 370px;//260px;
 				.bodyLeft {
 					max-width: 100%;
-    width: 30%;
-    height: 100%;
-    /* background: red; */
-    position: relative;
-    display: flex;
-    /* align-items: center; */
-    height: 260px;
-    justify-content: center;
-    align-items: center;
+					width: 30%;
+					height: 100%;
+					/* background: red; */
+					position: relative;
+					display: flex;
+					/* align-items: center; */
+					height: 260px;
+					justify-content: center;
+					align-items: center;
 					.bodyLeftVideo {
 						z-index: 1;
-    width: 85%;
-    padding: 0 20px;
-    box-sizing: border-box;
-    /* height: 260px; */
-    max-height: 260px;
+						width: 100%;
+						padding: 0 20px;
+						box-sizing: border-box;
+						/* height: 260px; */
+						max-height: 260px;
 						video {
 							width: 100%;
 						}
@@ -90,13 +90,14 @@
 
 						.bodyRightDescrDescr {
 							width:70%;
-							font-size: 20px;
+							font-size: 25px;
 							text-align: center;
 							color: white;
-							line-height: 30px;
+							line-height: 35px;
 							display: flex;
 							flex-direction: column;
-							justify-content: space-around;
+							    justify-content: space-around;
+    align-items: center;
 							.title {
 								width: 100%;
 								text-align: center;
@@ -110,9 +111,9 @@
 
 							.bodyRightDescrCheck {
 								display: flex;
-								justify-content: center;
-								width: 100%;
-								justify-content: space-evenly;
+    /* justify-content: center; */
+    width: 25%;
+    justify-content: space-between;
 								div {
 									background: #000000;
 									padding: 10px;
@@ -129,14 +130,19 @@
 							justify-content: center;
 							.stackTitle {
 								color: white;
-								font-size: 30px;
+								font-size: 40px;
 								margin-bottom: 20px;
 							}
 							.stackImages {
 								display: flex;
 								align-items: center;
+								flex-direction: column;
 								img {
 									max-width: 25%;
+								}
+								span {
+									color:white;
+									font-size:30px;
 								}
 							}
 						}
@@ -149,3 +155,81 @@
 		
 }
 //.clearfix:after { clear: both; }
+@media (max-width: 1440px) { 
+
+	#portfolio {
+		.gallery {
+			
+			.projects {
+			
+				.singleProject {
+					.bodyLeft {
+						width: 40%;
+					}
+					.bodyRight {
+						width: 60%;
+						.bodyRightDescr {
+								padding: 0 10px;
+								.bodyRightDescrDescr {
+									width: 65%;
+									.bodyRightDescrCheck {
+										width: 40%;
+									}
+								}
+								.bodyRightDescrStack {
+									width: 35%;
+								}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+@media ( max-width: 1024px) {
+	#portfolio {
+		.gallery {
+			
+			.projects {
+			
+				.singleProject {
+					flex-direction: column;
+    padding: 20px 0;
+    height: auto;
+    height: 1000px;
+    height: auto;
+					.bodyLeft {
+						width: 100%;
+	height: 30%;
+	.bodyLeftVideo {
+		height: unset;
+		max-height: unset;
+	}
+					}
+					.bodyRight {
+						    width: 90%;
+    height: 70%;
+						.bodyRightDescr {
+								    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+								.bodyRightDescrDescr {
+									//width: 65%;
+									.bodyRightDescrCheck {
+										//width: 40%;
+									}
+								}
+								.bodyRightDescrStack {
+									width: 100%;
+									.stackTitle {
+										// display: none;
+									}
+								}
+						}
+					}
+				}
+			}
+		}
+	}
+}
