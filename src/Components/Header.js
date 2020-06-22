@@ -1,22 +1,20 @@
 import React, { useEffect } from 'react';
-import AnchorLink from "react-anchor-link-smooth-scroll";
 export const Header = () => {
 
     const toggleBurgerMenu = () => {
         document.querySelector('.burger').classList.toggle('change');
         let menu = document.querySelector('.menu');
-
         // toggle menu on mobile
         menu.classList.contains('showMenu') ?
             menu.classList.replace('showMenu', 'hideMenu') :
-                menu.classList.replace('hideMenu', 'showMenu')
+                menu.classList.replace('hideMenu', 'showMenu') 
 
         }
-    /* useEffect(()=>{
+    useEffect(()=>{
         setTimeout(() => {
             document.querySelector('.menu').style.opacity = 1;
-        }, 1500);
-    }, []) */
+        }, 1000);
+    }, [])
     
     return (
       <div id="header">

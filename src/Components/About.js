@@ -1,10 +1,10 @@
 import React from 'react';
-
-export const About = () => 
+/* import myFace from './../assets/myFace/jpg';
+ */export const About = () => 
     <div id='about'>
 
         <div className='aboutBlock'>
-            <div className='photo'><img src="./user.jpg" alt='myface:)' /></div>
+            <div className='photo'><img src='sfaw' alt='myface:)' /></div>
             <div className='text'>
                 <p>Hello, my name is Yaroslav</p>
                 <p>I'm a front end developer from Wroclaw, Poland. </p>

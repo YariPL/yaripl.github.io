@@ -57,7 +57,7 @@
         justify-content: center;
         z-index:1;
         left:-10%;
-        // opacity: 0;
+        opacity: 0;
         a {
             width: 100%;
             text-align: center;
@@ -81,13 +81,13 @@
     }
     .showMenu {
         animation-name: move;
-        animation-duration: 1.5s;
+        animation-duration: 1s;
         animation-fill-mode: forwards;
         z-index: 2;
     }
     .hideMenu {
         animation-name: hide;
-        animation-duration: 1.5s;
+        animation-duration: 1s;
         animation-fill-mode: forwards;        
         z-index: 2;
     }
