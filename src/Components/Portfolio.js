@@ -8,6 +8,7 @@ import sass from './../assets/stack/sass.png';
 import mongodb from './../assets/stack/mongodb.png';
 import nodejs from './../assets/stack/nodejs.png'; */
 import project2Video from './../assets/videos/mov_bbb.mp4';
+import taskVideo from "./../assets/videos/task.mp4";
 /* import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
  */export const Portfolio = () => {
 	const [portfolioState, setPortfolioState] = useState({
@@ -15,7 +16,7 @@ import project2Video from './../assets/videos/mov_bbb.mp4';
       {
         title: "404 T-REX 3d clone",
         techStack: ["three.js", "webpack", "react", "sass"],
-        videoUrl: project2Video,
+        videoUrl: taskVideo,
         descr: `Clone of the famous chrome's 404 game made in 3D with the help of Three.js framework`,
         linkCode: "https://github.com/YariPL/404-trex-clone",
         linkUrl: "https://github.com/YariPL/404-trex-clone",
@@ -23,7 +24,7 @@ import project2Video from './../assets/videos/mov_bbb.mp4';
       {
         title: "Task manager",
         techStack: ["react", "mongodb", "nodejs", "express", "rest", "sass"],
-        videoUrl: project2Video,
+        videoUrl: taskVideo,
         descr: `Task manager project build to control multiple projects with
 					tasks and subtasks.` /*  All changes done by user will be reflected
           immediately. */,
@@ -33,7 +34,7 @@ import project2Video from './../assets/videos/mov_bbb.mp4';
       {
         title: "Pathfinding visualizer",
         techStack: ["react", "sass"],
-        videoUrl: project2Video,
+        videoUrl: taskVideo,
         descr: `App to visualize how does pathfinding algorithm works`,
         linkCode: "https://github.com/YariPL/task-manager",
         linkUrl: "https://github.com/YariPL/task-manager",
@@ -52,6 +53,9 @@ import project2Video from './../assets/videos/mov_bbb.mp4';
         >
           {portfolioState.projectsData.map((singleProject, index) => (
             <div key={index} className="singleProject">
+              <div className='mobileTitle'>
+                {singleProject.title}
+              </div>
               <div className="bodyLeft" alt="projectName">
                 {/* <div className="projectPreview">
                   <img src={singleProject.image} alt="project preview" />
@@ -87,7 +91,7 @@ import project2Video from './../assets/videos/mov_bbb.mp4';
                     </div>
                   </div>
                   <div className="bodyRightDescrStack">
-                    <div className="stackTitle">Technologies:</div>
+                    <div className="stackTitle">Tech:</div>
                     <div className="stackImages">
                       {singleProject.techStack.map((e, index) => (
                         /* <img src={e} alt="stack" key={index} />*/
