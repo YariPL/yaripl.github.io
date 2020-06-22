@@ -17,6 +17,8 @@ import project2Video from './../assets/videos/mov_bbb.mp4';
         techStack: ["three.js", "webpack", "react", "sass"],
         videoUrl: project2Video,
         descr: `Clone of the famous chrome's 404 game made in 3D with the help of Three.js framework`,
+        linkCode: "https://github.com/YariPL/404-trex-clone",
+        linkUrl: "https://github.com/YariPL/404-trex-clone",
       },
       {
         title: "Task manager",
@@ -24,13 +26,17 @@ import project2Video from './../assets/videos/mov_bbb.mp4';
         videoUrl: project2Video,
         descr: `Task manager project build to control multiple projects with
 					tasks and subtasks.` /*  All changes done by user will be reflected
-					immediately. */,
+          immediately. */,
+        linkCode: "https://github.com/YariPL/pathfinder-algorithms-visualizer",
+        linkUrl: "https://github.com/YariPL/pathfinder-algorithms-visualizer",
       },
       {
         title: "Pathfinding visualizer",
         techStack: ["react", "sass"],
         videoUrl: project2Video,
         descr: `App to visualize how does pathfinding algorithm works`,
+        linkCode: "https://github.com/YariPL/task-manager",
+        linkUrl: "https://github.com/YariPL/task-manager",
       },
     ],
   });
@@ -66,8 +72,18 @@ import project2Video from './../assets/videos/mov_bbb.mp4';
                       {singleProject.descr}
                     </div>
                     <div className="bodyRightDescrCheck">
-                      <div className="checkCode">Code</div>
-                      <div className="checkLive">Live</div>
+                      <a 
+                        href={singleProject.linkCode} 
+                        target='_blank'
+                        rel="noopener noreferrer">
+                        <div className="checkCode">Code</div>
+                      </a>
+                      <a 
+                        href={singleProject.linkUrl} 
+                        target='_blank'
+                        rel="noopener noreferrer">
+                        <div className="checkLive">Live</div>
+                      </a>
                     </div>
                   </div>
                   <div className="bodyRightDescrStack">

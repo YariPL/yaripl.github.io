@@ -2,7 +2,7 @@
 	height:100vh;height: fit-content;
 	background: #273043;
 	padding: 3% 0%;
-	height: 100vh;
+	// height: 100vh;
 	.selector {
 		//background: green;
 		display: flex;
@@ -288,6 +288,15 @@
 				}
 			}
 		}
+	}
+
+}
+
+@media (max-height: 900px) { 
+
+	#portfolio {
+		height: auto;
+		
 	}
 
 }
