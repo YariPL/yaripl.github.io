@@ -114,8 +114,20 @@ export const Contact = () => {
               <div id="socialAppsHello">
                 <div id="socialAppsText">Or contact me via</div>
                 <div id="socialAppsApps">
-                  <LinkedInIcon />
-                  <GitHubIcon />
+                  <a
+                    href="https://www.linkedin.com/in/yaroslavkhudchenko/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <LinkedInIcon />
+                  </a>
+                  <a
+                    href="https://github.com/yaroslavkhudchenko"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <GitHubIcon />
+                  </a>
                 </div>
               </div>
 
