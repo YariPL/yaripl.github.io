@@ -39,55 +39,38 @@
 				margin-bottom: 20px;
 				display: flex;
 				align-items: center;
+				height: 260px;
 				.bodyLeft {
 					max-width: 100%;
-					width: 30%;
-					height: 100%;
-					position: relative;
-					.projectPreview {
-						img {
-							max-width: 100%;
+    width: 30%;
+    height: 100%;
+    /* background: red; */
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    height: 260px;
+    justify-content: center;
+    align-items: center;
+					.bodyLeftVideo {
+						z-index: 1;
+    width: 85%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    /* height: 260px; */
+    max-height: 260px;
+						video {
+							width: 100%;
 						}
 					}
-
 					// border:10px solid black;
 					// transition: display 15s;
-					.title {
-						position: absolute;
-						width: 100%;
-						text-align: center;
-						z-index: 1;
-						color: #131a3d;
-						top: 36%;
-						left: 50%;
-						transform: translate(-50%, -50%);
-						font-size: 40px;
-						font-weight: 900;
-						text-shadow: 1px 1px 0px black;
-					}
-					.bodyDDescrCheck {
-						display: flex;
-						justify-content: center;
-						/* background: tan; */
-						width: 75%;
-						justify-content: space-evenly;
-						margin-bottom: 0px;
-						position: absolute;
-						bottom: 30%;
-						left: 50%;
-						transform: translate(-50%,30%);
-						div {
-							background: #000000;
-							padding: 10px;
-							cursor: pointer;
-							color: white;
-						}
-					}
+					
+					
 					
 				}
 			
 
-				.bodyD {
+				.bodyRight {
 					display: flex;
 					padding: 10px;
 					box-sizing: border-box;
@@ -96,24 +79,17 @@
 					//animation-name: down;
 					//animation-duration: 2s;
 					width: 70%;
+					height: 90%;
 					
-					.bodyDVideo {
-						z-index: 1;
-						width: 30%;
-						padding: 0 20px;
-						box-sizing: border-box;
-						video {
-							width: 100%;
-						}
-					}
-					.bodyDDescr {
+					.bodyRightDescr {
 						z-index: 1;
 						display: flex;
-						width: 70%;
+						width: 100%;
 						padding: 0 20px;
 						box-sizing: border-box;
-						.bodyDDescrDescr {
-							width:50%;
+
+						.bodyRightDescrDescr {
+							width:70%;
 							font-size: 20px;
 							text-align: center;
 							color: white;
@@ -121,13 +97,36 @@
 							display: flex;
 							flex-direction: column;
 							justify-content: space-around;
+							.title {
+								width: 100%;
+								text-align: center;
+								z-index: 1;
+								// color: #131a3d;
+								font-size: 40px;
+								font-weight: 900;
+								// text-shadow: 1px 1px 0px black;
+							}
 							
+
+							.bodyRightDescrCheck {
+								display: flex;
+								justify-content: center;
+								width: 100%;
+								justify-content: space-evenly;
+								div {
+									background: #000000;
+									padding: 10px;
+									cursor: pointer;
+									color: white;
+								}
+							}
 						}
-						.bodyDDescrStack {
-							width: 50%;
+						.bodyRightDescrStack {
+							width: 30%;
 							display: flex;
 							flex-direction: column;
 							align-items: center;
+							justify-content: center;
 							.stackTitle {
 								color: white;
 								font-size: 30px;

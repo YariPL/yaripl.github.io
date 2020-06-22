@@ -50,30 +50,30 @@ export const Portfolio = () => {
           {portfolioState.projectsData.map((singleProject, index) => (
             <div key={index} className="singleProject">
               <div className="bodyLeft" alt="projectName">
-                <div className="title">
-                  <div className="titletitle">{singleProject.title}</div>
-                </div>
-                <div className="bodyDDescrCheck">
-                  <div className="checkCode">Code</div>
-                  <div className="checkLive">Live</div>
-                </div>
-                <div className="projectPreview">
+                {/* <div className="projectPreview">
                   <img src={singleProject.image} alt="project preview" />
-                </div>
-              </div>
-              <div className="bodyRight">
-                <div className="bodyDVideo">
+                </div> */}
+                <div className="bodyLeftVideo">
                   <video controls>
                     <source src={singleProject.videoUrl} type="video/mp4" />
                   </video>
                 </div>
-                <div className="bodyDDescr">
-                  <div className="bodyDDescrDescr">
-                    <div className="bodyDDescrDescrText">
+              </div>
+              <div className="bodyRight">
+                <div className="bodyRightDescr">
+                  <div className="bodyRightDescrDescr">
+                    <div className="title">
+                      <div className="titletitle">{singleProject.title}</div>
+                    </div>
+                    <div className="bodyRightDescrDescrText">
                       {singleProject.descr}
                     </div>
+                    <div className="bodyRightDescrCheck">
+                      <div className="checkCode">Code</div>
+                      <div className="checkLive">Live</div>
+                    </div>
                   </div>
-                  <div className="bodyDDescrStack">
+                  <div className="bodyRightDescrStack">
                     <div className="stackTitle">Technologies:</div>
                     <div className="stackImages">
                       {singleProject.techStack.map((e, index) => (
