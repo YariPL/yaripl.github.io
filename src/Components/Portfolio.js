@@ -1,16 +1,8 @@
 import React, { useState } from 'react';
-/* 
-import image1 from './../assets/project1.png';
-import image2 from "./../assets/project2.png";
-import image3 from "./../assets/project3.png";
-import react from './../assets/stack/react.png';
-import sass from './../assets/stack/sass.png';
-import mongodb from './../assets/stack/mongodb.png';
-import nodejs from './../assets/stack/nodejs.png'; */
-import project2Video from './../assets/videos/mov_bbb.mp4';
+
 import taskVideo from "./../assets/videos/task.mp4";
-/* import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
- */export const Portfolio = () => {
+
+export const Portfolio = () => {
 	const [portfolioState, setPortfolioState] = useState({
     projectsData: [
       {
@@ -95,7 +87,7 @@ import taskVideo from "./../assets/videos/task.mp4";
                     <div className="stackImages">
                       {singleProject.techStack.map((e, index) => (
                         /* <img src={e} alt="stack" key={index} />*/
-                        <span>{e}</span>
+                        <span key={index}>{e}</span>
                       ))}
                     </div>
                   </div>

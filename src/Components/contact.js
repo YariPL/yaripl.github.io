@@ -12,7 +12,6 @@ export const Contact = () => {
     name: '',
     message: '',
     email: '',
-    sent: false,
     buttonText: 'Send'
   })
 
@@ -34,23 +33,21 @@ export const Contact = () => {
       axios.post('http://localhost:8000/',data)
         .then(res => {
 			console.log('success')
-          setContactState({ ...contactState, sent: true })
         })
         .catch(() => {
           console.log('Message not sent')
         })
 
-	  
+	  resetForm();
 	}
 	// reset form after submiting and sending data
 	const resetForm = () => {
     setContactState({
-      ...contactState,
-      name: '',
-      message: '',
-      email: '',
-      buttonText: 'Message Sent'
-    })
+      name: "",
+      message: "",
+      email: "",
+      buttonText: "Send",
+    });
 	}
 
 	return (
@@ -103,6 +100,7 @@ export const Contact = () => {
               >
                 {contactState.buttonText}
               </button>
+              
             </div>
           </form>
         </div>

@@ -40,15 +40,15 @@ const Background = () => {
             scene.add(sphereTab[i]);
           }
 		
-		// sphere part
+		      // sphere part
           let circle = new THREE.Object3D();
           let skelet = new THREE.Object3D();
 
           scene.add(circle);
           scene.add(skelet);
 
-          circle.position.x = 0.5;
-          skelet.position.x = 0.5;
+          circle.position.set(.5,0,0)// = 0.5;
+          skelet.position.set(.5,0,0)// = 0.5;
 
           let geom = new THREE.IcosahedronGeometry(7, 1);
           let geom2 = new THREE.IcosahedronGeometry(15, 1);
@@ -95,8 +95,8 @@ const Background = () => {
 
         function animate() {
           requestAnimationFrame(animate);
-          var timer = 0.00001 * Date.now();
-          for (var i = 0, il = sphereTab.length; i < il; i++) {
+          let timer = 0.00001 * Date.now();
+          for (let i = 0, il = sphereTab.length; i < il; i++) {
             var sfere = sphereTab[i];
             sfere.position.x = 400 * Math.sin(timer + i);
             // sfere.position.z= 500 * Math.sin( timer + i * 1.1 );
