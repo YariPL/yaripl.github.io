@@ -112,7 +112,7 @@ export const Contact = () => {
             <div id="socialMail">Feel free to send me an email</div>
             <div id="socialAppsPart">
               <div id="socialAppsHello">
-                Or contact me via
+                <div id="socialAppsText">Or contact me via</div>
                 <div id="socialAppsApps">
                   <LinkedInIcon />
                   <GitHubIcon />
@@ -121,14 +121,18 @@ export const Contact = () => {
 
               <div id="cvGrab">
                 <p>
-                  And don't forget to get a copy of my 
-                  <span id="downlCVButton"
-                  onClick={() => {
-                    let link = document.createElement("a");
-                    link.href = "YaroslavKhudchenkoCV.pdf";
-                    link.download = "YaroslavKhudchenkoCV.pdf";
-                    link.dispatchEvent(new MouseEvent("click"));
-                  }}>CV</span>
+                  And don't forget to get a copy of my
+                  <span
+                    id="downlCVButton"
+                    onClick={() => {
+                      let link = document.createElement("a");
+                      link.href = "YaroslavKhudchenkoCV.pdf";
+                      link.download = "YaroslavKhudchenkoCV.pdf";
+                      link.dispatchEvent(new MouseEvent("click"));
+                    }}
+                  >
+                    CV
+                  </span>
                 </p>
               </div>
             </div>

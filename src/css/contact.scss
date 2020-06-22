@@ -94,6 +94,155 @@
 	}
 }
 
-@media (max-width: 768px) {
-	
+@media (max-width: 1440px) {
+	#contact {
+		
+		.formTitle{
+		}
+		#contactContainer {
+			width: 95%;
+			.formContainer {
+				.form {
+					input, textarea {
+					}
+					textarea {
+					}
+					.button {
+					}
+				}
+			}
+			.socialMediaContainer {
+				
+				#socialHello {
+					font-size:40px;
+				}
+				#socialMail {
+					font-size: 30px;
+				}
+				#socialAppsPart {
+					font-size:30px;
+					#socialAppsHello {
+						margin-top: 10px;
+					}
+					#socialAppsApps {
+						svg {
+						}
+						
+					}
+
+					#cvGrab {
+						line-height: 45px;
+							p {
+								#downlCVButton {
+								
+								}
+							}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 880px) {
+	#contact {
+		height: auto;
+		.formTitle{
+		}
+		#contactContainer {
+			flex-direction: column-reverse;
+			.formContainer {
+				width: 90%;
+				margin: 0 auto;
+				.form {
+					input, textarea {
+					}
+					textarea {
+					}
+					.button {
+					}
+				}
+			}
+			.socialMediaContainer {
+				width: 90%;
+				margin: 0 auto;
+				#socialHello {
+				}
+				#socialMail {
+				}
+				#socialAppsPart {
+					#socialAppsHello {
+					}
+					#socialAppsApps {
+						svg {
+						}
+						
+					}
+
+					#cvGrab {
+							p {
+								#downlCVButton {
+								
+								}
+							}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 500px) {
+	#contact {
+		margin-bottom: 20px;
+		.formTitle{
+		}
+		#contactContainer {
+			.formContainer {
+			
+				.form {
+					input, textarea {
+					}
+					textarea {
+					}
+					.button {
+					}
+				}
+			}
+			.socialMediaContainer {
+				
+				#socialHello {
+					font-size: 27px;
+				}
+				#socialMail {
+					font-size: 22px;
+				}
+				#socialAppsPart {
+					font-size: 22px;
+					#socialAppsHello {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						height: 90px;
+						justify-content: space-between;
+					}
+					#socialAppsApps {
+						margin-left: 0;
+						svg {
+							margin: 5px;
+						}
+						
+					}
+
+					#cvGrab {
+						line-height: 40px;
+							p {
+								#downlCVButton {
+								
+								}
+							}
+					}
+				}
+			}
+		}
+	}
 }
