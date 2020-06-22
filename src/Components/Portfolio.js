@@ -44,58 +44,48 @@ export const Portfolio = () => {
 	return (
     <div id="portfolio">
       <div className="gallery">
-        <div className={showProjectDescr ? "openProjects projects" : "projects"}>
+        <div
+          className={showProjectDescr ? "openProjects projects" : "projects"}
+        >
           {portfolioState.projectsData.map((singleProject, index) => (
-            <div
-              key={index}
-              className="singleProject"
-            >
-              <div className="bodyS" alt="projectName">
+            <div key={index} className="singleProject">
+              <div className="bodyLeft" alt="projectName">
                 <div className="title">
                   <div className="titletitle">{singleProject.title}</div>
-                  <ArrowForwardIosIcon
-                    style={{ transform: "rotate(90deg)" }}
-                    onClick={() => {
-                      setActiveProject(singleProject);
-                      setShowProjectDescr(true);
-                    }}
-                  />
+                </div>
+                <div className="bodyDDescrCheck">
+                  <div className="checkCode">Code</div>
+                  <div className="checkLive">Live</div>
                 </div>
                 <div className="projectPreview">
                   <img src={singleProject.image} alt="project preview" />
                 </div>
               </div>
+              <div className="bodyRight">
+                <div className="bodyDVideo">
+                  <video controls>
+                    <source src={singleProject.videoUrl} type="video/mp4" />
+                  </video>
+                </div>
+                <div className="bodyDDescr">
+                  <div className="bodyDDescrDescr">
+                    <div className="bodyDDescrDescrText">
+                      {singleProject.descr}
+                    </div>
+                  </div>
+                  <div className="bodyDDescrStack">
+                    <div className="stackTitle">Technologies:</div>
+                    <div className="stackImages">
+                      {singleProject.techStack.map((e, index) => (
+                        <img src={e} alt="stack" key={index} />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           ))}
         </div>
-        {showProjectDescr && (
-          <div className="bodyD">
-            <div className="bodyDVideo">
-              <video controls>
-                <source src={activeProject.videoUrl} type="video/mp4" />
-              </video>
-            </div>
-            <div className="bodyDDescr">
-              <div className="bodyDDescrDescr">
-                <div className="bodyDDescrDescrText">
-					{activeProject.descr}
-				</div>
-                <div className="bodyDDescrCheck">
-                  <div className="checkCode">Code</div>
-                  <div className="checkLive">Live</div>
-                </div>
-              </div>
-              <div className="bodyDDescrStack">
-                <div className="stackTitle">Technologies:</div>
-                <div className="stackImages">
-                  {activeProject.techStack.map((e, index) => (
-                    <img src={e} alt="stack" key={index} />
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );

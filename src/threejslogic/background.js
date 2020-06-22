@@ -47,7 +47,7 @@ const Background = () => {
           scene.add(circle);
           scene.add(skelet);
 
-          circle.position.x = 0.53;
+          circle.position.x = 0.5;
           skelet.position.x = 0.5;
 
           let geom = new THREE.IcosahedronGeometry(7, 1);

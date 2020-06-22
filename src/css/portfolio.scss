@@ -1,8 +1,8 @@
 #portfolio {
-	//height:100vh;
-	background:cyan;
-	background:#273043;
+	height:100vh;
+	background: #273043;
 	padding: 3% 0%;
+	height: 100vh;
 	.selector {
 		//background: green;
 		display: flex;
@@ -17,31 +17,31 @@
 		}
 	}
 	.gallery {
-		
+		padding: 20px;
 		// grid-row-gap: 2%;
 		//padding: 0 1%;
 		.projects {
-			display: grid;
-			grid-template-columns: auto auto auto;
+			display: flex;
+			flex-direction: column;
 			// grid-column-gap: 1%;
-		
+			.singleProject:hover {
+				transform: scale(.993);
+			}
 			.singleProject {
-				display: flex;
-				flex-direction:column;
-				background: gray;
-				/* animation-duration: 4s;
-				animation-name: fadeIn;
-				animation-fill-mode: forwards; */
-				margin:0 auto;
-				//opacity:0;
+				background: #1A3E13;
+				background: #133E22;
+				background: #3E131A;
+				box-shadow: 2px 4px 8px 2px black;
+				margin: 0 auto;
 				position: relative;
-				overflow: hidden;
 				width: 100%;
-				height: fit-content;
 				z-index: 1;
-				.bodyS {
+				margin-bottom: 20px;
+				display: flex;
+				align-items: center;
+				.bodyLeft {
 					max-width: 100%;
-					width: 100%;
+					width: 30%;
 					height: 100%;
 					position: relative;
 					.projectPreview {
@@ -54,96 +54,28 @@
 					// transition: display 15s;
 					.title {
 						position: absolute;
-						top: -20px;
-						/* background: red; */
 						width: 100%;
 						text-align: center;
-						z-index: 999;
-						color: white;
-						top: 50%;
+						z-index: 1;
+						color: #131a3d;
+						top: 36%;
 						left: 50%;
-						transform: translate(-50%,-50%);
+						transform: translate(-50%, -50%);
 						font-size: 40px;
+						font-weight: 900;
+						text-shadow: 1px 1px 0px black;
 					}
-					.title:hover {
-						//top: 0;
-					}
-							
-					
-				}
-			
-			}
-			.notActiveSingleProject {
-				filter:brightness(0.4)
-			}
-			.singleProject:hover {
-				//transform:scale(.9);
-			}
-
-			@keyframes fadeIn {
-				/* 0%   {opacity: 0.2;}
-				25%  {opacity: 0.4;}
-				50%  {opacity: 0.6;}
-				75%  {opacity: 0.8;}
-				100% {opacity: 1;} */
-				0%   {opacity: 0;}
-				
-				100% {opacity: 1;}
-			}
-		}
-		.openProjects {
-			padding: 10px;
-			background: black;
-		}
-		@keyframes down {
-			from {
-				opacity: 0;;
-			}
-			to {
-				opacity: 1;
-			}
-		}
-
-		.bodyD {
-			display: flex;
-			padding: 10px;
-			box-sizing: border-box;
-			//background: green; // for test
-			//transition: ease-in 3s;
-			animation-name: down;
-			animation-duration: 2s;
-			background: black;
-			.bodyDVideo {
-				z-index: 1;
-				width: 30%;
-				padding: 0 20px;
-				box-sizing: border-box;
-				video {
-					width: 100%;
-				}
-			}
-			.bodyDDescr {
-				z-index: 1;
-				display: flex;
-				width: 70%;
-				padding: 0 20px;
-				box-sizing: border-box;
-				.bodyDDescrDescr {
-					width:50%;
-					font-size: 20px;
-					text-align: center;
-					color: white;
-					line-height: 30px;
-					display: flex;
-					flex-direction: column;
-					justify-content: space-around;
 					.bodyDDescrCheck {
 						display: flex;
 						justify-content: center;
 						/* background: tan; */
-						width: 100%;
+						width: 75%;
 						justify-content: space-evenly;
 						margin-bottom: 0px;
+						position: absolute;
+						bottom: 30%;
+						left: 50%;
+						transform: translate(-50%,30%);
 						div {
 							background: #000000;
 							padding: 10px;
@@ -151,28 +83,70 @@
 							color: white;
 						}
 					}
+					
 				}
-				.bodyDDescrStack {
-					width: 50%;
+			
+
+				.bodyD {
 					display: flex;
-					flex-direction: column;
-					align-items: center;
-					.stackTitle {
-						color: white;
-						font-size: 30px;
-						margin-bottom: 20px;
-					}
-					.stackImages {
-						display: flex;
-						align-items: center;
-						img {
-							max-width: 25%;
+					padding: 10px;
+					box-sizing: border-box;
+					//background: green; // for test
+					//transition: ease-in 3s;
+					//animation-name: down;
+					//animation-duration: 2s;
+					width: 70%;
+					
+					.bodyDVideo {
+						z-index: 1;
+						width: 30%;
+						padding: 0 20px;
+						box-sizing: border-box;
+						video {
+							width: 100%;
 						}
 					}
+					.bodyDDescr {
+						z-index: 1;
+						display: flex;
+						width: 70%;
+						padding: 0 20px;
+						box-sizing: border-box;
+						.bodyDDescrDescr {
+							width:50%;
+							font-size: 20px;
+							text-align: center;
+							color: white;
+							line-height: 30px;
+							display: flex;
+							flex-direction: column;
+							justify-content: space-around;
+							
+						}
+						.bodyDDescrStack {
+							width: 50%;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							.stackTitle {
+								color: white;
+								font-size: 30px;
+								margin-bottom: 20px;
+							}
+							.stackImages {
+								display: flex;
+								align-items: center;
+								img {
+									max-width: 25%;
+								}
+							}
+						}
+						
+					}	
 				}
-				
-			}	
+			}
 		}
 	}
+		
 }
 //.clearfix:after { clear: both; }
