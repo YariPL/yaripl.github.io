@@ -8,15 +8,15 @@ require('dotenv').config(); // to have variables in dotenv file
 
 const app = express();
 
-const port = 8000;
+//const port = 8000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(cors());
 
-app.listen(port, () => {
-    console.log(`Server is running on the port ${port}`);
+app.listen( () => {
+    console.log(`Server is running on the port `);
 });
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
 app.use(express.static(path.join(__dirname, 'build')));
