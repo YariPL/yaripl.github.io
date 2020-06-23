@@ -30,13 +30,14 @@ export const Contact = () => {
         buttonText: 'Sending...'
       })
 
-      axios.post('http://localhost:8000/',data)
-        .then(res => {
-			console.log('success')
+      axios
+        .post("https://yaroslavportfolio.herokuapp.com/", data)
+        .then((res) => {
+          console.log("success");
         })
         .catch(() => {
-          console.log('Message not sent')
-        })
+          console.log("Message not sent");
+        });
 
 	  resetForm();
 	}
