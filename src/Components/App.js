@@ -2,7 +2,7 @@ import React from 'react';
 import './../css/main.scss';
 import {About} from './About';
 import {Portfolio} from './Portfolio';
-import { Contact } from './Contact';
+import {Contact} from './Contact';
 import {Header} from './Header';
 import {Home} from './Home';
 import  Background  from './../threejslogic/background';
