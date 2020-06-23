@@ -17,12 +17,12 @@ app.listen(port, () => {
     console.log(`Server is running on the port ${port}`);
 });
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
+app.use(express.static(path.join(__dirname, 'build')));
 
 
 app.get('/', (req, res) => {
     console.log('in the fir req')
-
-    res.send('Welcome to my api');
+	res.sendFile(path.join(__dirname, 'build', 'index.html'));
 })
 
 app.post('/', (req, res) => {
