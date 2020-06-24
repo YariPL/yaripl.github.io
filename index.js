@@ -8,14 +8,14 @@ require('dotenv').config(); // to have variables in dotenv file
 
 const app = express();
 
-//const port = 8000;
+const port = process.env.PORT || 8000; ;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(cors());
 
-app.listen( () => {
+app.listen(port, () => {
     console.log(`Server is running on the port `);
 });
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
@@ -32,9 +32,9 @@ app.post('/', (req, res) => {
     /* console.log('in the sec req')
 
     console.log('-----------------') */
-    var data = req.body;
+    let data = req.body;
 
-    var smtpTransport = nodemailer.createTransport({
+    let smtpTransport = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
             user: process.env.mail,
@@ -42,7 +42,7 @@ app.post('/', (req, res) => {
         }
     });
 
-    var mailOptions = {
+    let mailOptions = {
         from: data.email,
         to: 'yaroslav.khudchenko@gmail.com',
         subject: 'contact from ' + data.email,
@@ -57,6 +57,7 @@ app.post('/', (req, res) => {
             if (error) {
                 res.send(error);
                 res.send(response);
+                res.send('responsssse');
                 console.log('response')
                 console.log(error)
                 console.log(response)

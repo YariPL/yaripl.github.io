@@ -31,7 +31,7 @@ export const Contact = () => {
       })
 
       axios
-        .post("https://yaroslavportfolio.herokuapp.com/", data)
+        .post("https://yaroslavkhudchenko.herokuapp.com/", data)
         .then((res) => {
           console.log("success");
         })
