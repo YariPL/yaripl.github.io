@@ -14,17 +14,17 @@ export const About = () => (
                  </p>
                  <p>
                    I have 2 years of commercial experience in building web
-                   applications as well as mobile and desktop once.{" "}
+                   applications as well as mobile and desktop ones.{" "}
                  </p>
                </div>
              </div>
              <div className="stackBlock">
                <div className="iKnow">
-                 <div className="iKnowTitle">I know:</div>
-                 <div classname="iKnowContent">
+                 <div className="iKnowTitle">Technologies I know:</div>
+                 <div className="iKnowContent">
                    <span>JS (ES2015+)</span>
                    <span>CSS (RWD, SASS)</span>
-                   <span>React.js(Hooks,Context API)</span>
+                   <span>React.js (Hooks, Context API)</span>
                    <span>Ember.js</span>
                    <span>Three.js</span>
                    <span>GIT</span>
@@ -35,7 +35,7 @@ export const About = () => (
                  </div>
                </div>
                <div className="familierWith">
-                 <div className="familierWithTitle">Familier with:</div>
+                 <div className="familierWithTitle">{/* Technologies I familier with: */}</div>
                  <div className="familierWithContent">
                    <span>MongoDB</span>
                    <span>Node.js</span>

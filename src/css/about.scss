@@ -18,6 +18,7 @@
             justify-content: flex-start;
             width: 90%;
             margin: 0 auto;
+            padding: 20px 0;
             .photo {
                 text-align: center;
                 z-index: 1;
@@ -35,7 +36,18 @@
                 font-size: 35px;
             }
         }
+        .stackBlock::before {
+            content: '';
+            color: white;
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: white;
+        }
         .stackBlock {
+            position: relative;
             z-index: 1;
             display: flex;
             align-items: center;
@@ -47,17 +59,45 @@
             color: white;
             font-size: 35px;
             .iKnow {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                height: 200px;
+                .iKnowTitle {
+                    margin:20px 0;
+                }
+                .iKnowContent {
                     display: flex;
                     width: fit-content;
                     flex-wrap: wrap;
                     justify-content: center;
-                span {
-                    margin-left: 25px;
+                    font-size: 25px;
+                    span {
+                        margin-left: 25px;
+                    }
                 }
+                
             }
             .familierWith  {
-                span {
-                    
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                // height: 200px;
+                .familierWithTitle {
+                    margin:20px 0;
+                }
+                .familierWithContent {
+                    display: flex;
+                    width: fit-content;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    font-size: 25px;
+
+                    span {
+                        margin-left: 25px;
+                    }
                 }
             }
         }
@@ -65,34 +105,71 @@
     }
     // display: none;
 }
-
-@media (max-width: 768px) { 
-
-    #about {
-    height: auto;
-    .aboutBlock {
-        flex-direction: column;
-        width: 95%;
-        .photo {
-            text-align: center;
-            z-index: 1;
-            width: 80%;
-            img {
-                max-width: 60%;
-                border-radius: 50%;
-                user-select: none;
+@media (max-width: 1440px) {
+   #about {
+        .aboutBlock {
+        
+            .aboutBlockTop {
+                
+                .photo {
+                
+                    img {
+                        max-width: 60%;
+                    }
+                }
             }
         }
-        .text {
-            // text-align: center;
-            z-index: 1;
-            width: 95%;
-            color: white;
-            font-size: 35px;
-            font-size: 22px;
+    }
+}
+@media (max-width: 1024px) {
+#about {
+        .aboutBlock {
+            width: 100%;
+            .aboutBlockTop {
+                flex-direction: column;
+                .text {
+                    width: 90%;
+                }
+                .photo {
+                
+                    img {
+                        max-width: 80%;
+                    }
+                }
+            }
+            staclBlock {
+                padding-top: 20px;
+            }
         }
     }
-    // display: none;
 }
+@media (max-width: 768px) { 
+
+  /*       #about {
+        height: auto;
+        .aboutBlock {
+            flex-direction: column;
+            width: 95%;
+            .photo {
+                text-align: center;
+                z-index: 1;
+                width: 80%;
+                img {
+                    max-width: 60%;
+                    border-radius: 50%;
+                    user-select: none;
+                }
+            }
+            .text {
+                // text-align: center;
+                z-index: 1;
+                width: 95%;
+                color: white;
+                font-size: 35px;
+                font-size: 22px;
+            }
+        }
+        // display: none;
+    } */
 
 }

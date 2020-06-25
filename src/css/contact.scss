@@ -34,7 +34,11 @@
 					margin-bottom: 10px;
 					background:#353535ad;//#353535;
 					color: white;
-					font-size: 20px;
+					font-size: 20px;box-shadow: 2px 4px 8px 2px black;
+    				background: #3e131a6b;
+				}
+				input, textarea {
+					outline: none;
 				}
 				textarea {
 					height: 200px;
