@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 
-import taskVideo from "./../assets/videos/task.mp4";
+import taskVideo from "./../assets/videos/task-man-por.mp4";
+import pathVideo from "./../assets/videos/path-por.mp4";
 
 export const Portfolio = () => {
 	const [portfolioState, setPortfolioState] = useState({
     projectsData: [
-      {
+      /* {
         title: "404 T-REX 3d clone",
         techStack: ["three.js", "webpack", "react", "sass"],
         videoUrl: taskVideo,
         descr: `Clone of the famous chrome's 404 game made in 3D with the help of Three.js framework`,
         linkCode: "https://github.com/YariPL/404-trex-clone",
         linkUrl: "https://github.com/YariPL/404-trex-clone",
-      },
+      }, */
       {
         title: "Task manager",
         techStack: ["react", "mongodb", "nodejs", "express", "rest", "sass"],
@@ -21,15 +22,15 @@ export const Portfolio = () => {
 					tasks and subtasks.` /*  All changes done by user will be reflected
           immediately. */,
         linkCode: "https://github.com/YariPL/pathfinder-algorithms-visualizer",
-        linkUrl: "https://github.com/YariPL/pathfinder-algorithms-visualizer",
+        linkUrl: "https://tasksorginizer.herokuapp.com/",
       },
       {
         title: "Pathfinding visualizer",
         techStack: ["react", "sass"],
-        videoUrl: taskVideo,
-        descr: `App to visualize how does pathfinding algorithm works`,
+        videoUrl: pathVideo,
+        descr: `App to visualize how does dijkstra pathfinding algorithm works`,
         linkCode: "https://github.com/YariPL/task-manager",
-        linkUrl: "https://github.com/YariPL/task-manager",
+        linkUrl: "https://pathfindervisualizer.herokuapp.com/",
       },
     ],
   });

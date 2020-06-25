@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio-page/static/css/main.cb5467ec.chunk.css",
-    "main.js": "/portfolio-page/static/js/main.a4a2c527.chunk.js",
-    "main.js.map": "/portfolio-page/static/js/main.a4a2c527.chunk.js.map",
-    "runtime-main.js": "/portfolio-page/static/js/runtime-main.131e381a.js",
-    "runtime-main.js.map": "/portfolio-page/static/js/runtime-main.131e381a.js.map",
-    "static/js/2.61894296.chunk.js": "/portfolio-page/static/js/2.61894296.chunk.js",
-    "static/js/2.61894296.chunk.js.map": "/portfolio-page/static/js/2.61894296.chunk.js.map",
-    "index.html": "/portfolio-page/index.html",
-    "precache-manifest.e1d1e1d1eaac2b5957122b518064f3c9.js": "/portfolio-page/precache-manifest.e1d1e1d1eaac2b5957122b518064f3c9.js",
-    "service-worker.js": "/portfolio-page/service-worker.js",
-    "static/css/main.cb5467ec.chunk.css.map": "/portfolio-page/static/css/main.cb5467ec.chunk.css.map",
-    "static/js/2.61894296.chunk.js.LICENSE.txt": "/portfolio-page/static/js/2.61894296.chunk.js.LICENSE.txt",
-    "static/media/face_cr.png": "/portfolio-page/static/media/face_cr.525ec37c.png",
-    "static/media/task.mp4": "/portfolio-page/static/media/task.b15bb772.mp4"
+    "main.css": "/static/css/main.240e4dde.chunk.css",
+    "main.js": "/static/js/main.9cf10ac1.chunk.js",
+    "main.js.map": "/static/js/main.9cf10ac1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e5fc83a6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e5fc83a6.js.map",
+    "static/js/2.dcdc57d2.chunk.js": "/static/js/2.dcdc57d2.chunk.js",
+    "static/js/2.dcdc57d2.chunk.js.map": "/static/js/2.dcdc57d2.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.aa665a1658d4275100b2708135b4551a.js": "/precache-manifest.aa665a1658d4275100b2708135b4551a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.240e4dde.chunk.css.map": "/static/css/main.240e4dde.chunk.css.map",
+    "static/js/2.dcdc57d2.chunk.js.LICENSE.txt": "/static/js/2.dcdc57d2.chunk.js.LICENSE.txt",
+    "static/media/face_cr.png": "/static/media/face_cr.525ec37c.png",
+    "static/media/task.mp4": "/static/media/task.b15bb772.mp4"
   },
   "entrypoints": [
-    "static/js/runtime-main.131e381a.js",
-    "static/js/2.61894296.chunk.js",
-    "static/css/main.cb5467ec.chunk.css",
-    "static/js/main.a4a2c527.chunk.js"
+    "static/js/runtime-main.e5fc83a6.js",
+    "static/js/2.dcdc57d2.chunk.js",
+    "static/css/main.240e4dde.chunk.css",
+    "static/js/main.9cf10ac1.chunk.js"
   ]
 }
