@@ -156,7 +156,7 @@
             height: 250px;
             .iKnow {
                 .iKnowTitle {
-font-size: 30px;
+                    font-size: 30px;
                 }
                 .iKnowContent {
                     font-size: 20px;
@@ -186,7 +186,7 @@ font-size: 30px;
                 .photo {
                 
                     img {
-                        //max-width: 80%;
+                        max-width: 100%;
                     }
                 }
             }
@@ -196,7 +196,7 @@ font-size: 30px;
                         font-size: 20px;
                     }
                     .iKnowContent {
-                        font-size: 25px;
+                        font-size: 15px;
                         
                         span {
                             margin-left: 10px;
