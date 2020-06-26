@@ -3,7 +3,12 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 const path = require("path");
+const aws = require("aws-sdk");
 
+let s3 = new aws.S3({
+  mail_config: process.env.mail_config,
+  mail_access: process.env.mail_access,
+});
 require('dotenv').config(); // to have variables in dotenv file
 
 const app = express();
@@ -37,8 +42,8 @@ app.post('/', (req, res) => {
     let smtpTransport = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-            user: process.env.mail,
-            pass: process.env.password
+            user: s3.mail_config,
+            pass: s3.mail_access
         }
     });
 
