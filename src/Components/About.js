@@ -20,7 +20,7 @@ export const About = () => (
              </div>
              <div className="stackBlock">
                <div className="iKnow">
-                 <div className="iKnowTitle">Technologies I know:</div>
+                 <div className="iKnowTitle">Technologies I use:</div>
                  <div className="iKnowContent">
                    <span>JS (ES2015+)</span>
                    <span>CSS (RWD, SASS)</span>
@@ -38,7 +38,7 @@ export const About = () => (
                  <div className="familierWithTitle">{/* Technologies I familier with: */}</div>
                  <div className="familierWithContent">
                    <span>MongoDB</span>
-                   <span>Node.js</span>
+                   <span>Node.js(basics)</span>
                    <span>Express.js</span>
                    <span>REST API</span>
                  </div>

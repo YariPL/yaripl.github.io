@@ -10,6 +10,12 @@
         width: 90%;
         margin: 0 auto;
         display: flex;
+        position: relative;
+        padding: 0px 0px 45px 0px;
+        box-sizing: border-box;
+        background: #3e131a6b;
+        box-shadow: 2px 4px 8px 2px black;
+        z-index: 1;
         .aboutBlockTop {
             z-index: 1;
             display: flex;
@@ -76,6 +82,9 @@
                     span {
                         margin-left: 25px;
                     }
+                    span:nth-of-type(1) {
+                        margin-left: 0px;
+                    }
                 }
                 
             }
@@ -86,7 +95,8 @@
                 justify-content: space-evenly;
                 // height: 200px;
                 .familierWithTitle {
-                    margin:20px 0;
+                    //margin:20px 0;
+                    display: none;
                 }
                 .familierWithContent {
                     display: flex;
@@ -97,6 +107,9 @@
 
                     span {
                         margin-left: 25px;
+                    }
+                    span:nth-of-type(1) {
+                        margin-left: 0px;
                     }
                 }
             }
@@ -124,11 +137,12 @@
 @media (max-width: 1024px) {
 #about {
         .aboutBlock {
-            width: 100%;
+            //width: 96%;
             .aboutBlockTop {
                 flex-direction: column;
                 .text {
-                    width: 90%;
+                    width: 100%;
+                    font-size: 30px;
                 }
                 .photo {
                 
@@ -137,39 +151,68 @@
                     }
                 }
             }
-            staclBlock {
-                padding-top: 20px;
+            .stackBlock {
+            
+            height: 250px;
+            .iKnow {
+                .iKnowTitle {
+font-size: 30px;
+                }
+                .iKnowContent {
+                    font-size: 20px;
+                    line-height: 30px;
+                    
+                }
             }
+            .familierWith {
+                        .familierWithContent {
+                            font-size: 20px;
+                        }
+                    }
+        }
         }
     }
 }
-@media (max-width: 768px) { 
 
-  /*       #about {
-        height: auto;
+@media (max-width: 768px) { 
+    #about {
         .aboutBlock {
-            flex-direction: column;
-            width: 95%;
-            .photo {
-                text-align: center;
-                z-index: 1;
-                width: 80%;
-                img {
-                    max-width: 60%;
-                    border-radius: 50%;
-                    user-select: none;
+            //width: 96%;
+            .aboutBlockTop {
+                //flex-direction: column;
+                .text {
+                    font-size: 20px;
+                }
+                .photo {
+                
+                    img {
+                        //max-width: 80%;
+                    }
                 }
             }
-            .text {
-                // text-align: center;
-                z-index: 1;
-                width: 95%;
-                color: white;
-                font-size: 35px;
-                font-size: 22px;
+            .stackBlock {
+                .iKnow {
+                    .iKnowTitle {
+                        font-size: 20px;
+                    }
+                    .iKnowContent {
+                        font-size: 25px;
+                        
+                        span {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                .familierWith {
+                    .familierWithContent {
+                        font-size: 15px;
+                        line-height: 30px;
+                        span {
+                            margin-left: 10px;
+                        }
+                    }
+                }
             }
         }
-        // display: none;
-    } */
-
+    }
 }
