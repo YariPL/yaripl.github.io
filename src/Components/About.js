@@ -9,7 +9,7 @@ export const About = () => (
                </div>
                <div className="text">
                  <p>
-                   Hello, my name is Yaroslav. I'm a front end developer from
+                   Hello, my name is Yaroslav. I'm a front-end developer from
                    Wroclaw, Poland.
                  </p>
                  <p>

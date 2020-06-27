@@ -18,19 +18,17 @@ export const Portfolio = () => {
         title: "Task manager",
         techStack: ["react", "mongodb", "nodejs", "express", "rest", "sass"],
         videoUrl: taskVideo,
-        descr: `Task manager project build to control multiple projects with
-					tasks and subtasks.` /*  All changes done by user will be reflected
-          immediately. */,
-        linkCode: "https://github.com/YariPL/pathfinder-algorithms-visualizer",
+        descr: `Task manager is the app which helps to manage projects and tasks`,
+        linkCode: "https://github.com/YariPL/task-manager",
         linkUrl: "https://tasksorginizer.herokuapp.com/",
       },
       {
         title: "Pathfinding visualizer",
         techStack: ["react", "sass"],
         videoUrl: pathVideo,
-        descr: `App to visualize how does dijkstra pathfinding algorithm works`,
-        linkCode: "https://github.com/YariPL/task-manager",
-        linkUrl: "https://pathfindervisualizer.herokuapp.com/",
+        descr: `Visualization of how the pathfinding algorithm works`,
+        linkCode: "https://github.com/YariPL/pathfinder-algorithms-visualizer",
+        linkUrl: "https://pathfindingvisualizeralg.herokuapp.com/",
       },
     ],
   });
