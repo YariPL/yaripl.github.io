@@ -6,8 +6,6 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 export const Contact = () => {
 
-
-
   const [contactState,setContactState] = useState({
     name: '',
     message: '',

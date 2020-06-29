@@ -32,7 +32,6 @@ export const Portfolio = () => {
       },
     ],
   });
-	const [activeProject, setActiveProject] = useState([]);
 	const [showProjectDescr, setShowProjectDescr] = useState(false);
 
 	
@@ -48,9 +47,6 @@ export const Portfolio = () => {
                 {singleProject.title}
               </div>
               <div className="bodyLeft" alt="projectName">
-                {/* <div className="projectPreview">
-                  <img src={singleProject.image} alt="project preview" />
-                </div> */}
                 <div className="bodyLeftVideo">
                   <video controls>
                     <source src={singleProject.videoUrl} type="video/mp4" />

@@ -1,12 +1,12 @@
 #contact {
-	    height: 100vh;
-    width: 100%;
-    // background: #273043;
-    position: relative;
-    display: flex;
-    justify-content: center;
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
 	flex-direction: column;
-	z-index: 1;    margin-bottom: 50px;
+	z-index: 1;    
+	margin-bottom: 50px;
 	.formTitle{
 		text-align: center;
 		font-size: 30px;
@@ -16,14 +16,11 @@
 	#contactContainer {
 		display: flex;
 		width: 75%; // 90%;
-		//background: red;
 		justify-content: space-evenly;
 		margin: 0 auto;
 		flex-direction: row-reverse;
 		.formContainer {
 			width: 40%;
-
-		
 			.form {
 				input, textarea {
 					width: 100%;
@@ -64,13 +61,9 @@
 			#socialHello {
 				font-size:50px;
 				margin-bottom: 30px;			}
-			#socialMail {
-				//font-size: 43px;
-			}
 			#socialAppsPart {
 				#socialAppsHello {
 					display: flex;
-					
 				}
 				#socialAppsApps {
 					a {
@@ -81,7 +74,6 @@
 					svg {
 						font-size: 40px;
 					}
-					
 				}
 
 				#cvGrab {
@@ -92,7 +84,6 @@
 								margin-left: 10px;
 								border-radius: 5px;
 								cursor: pointer;
-								/* box-shadow: 3px 4px 5px 4px black, 0px 0px 9px 3px black; */
 								box-shadow: 6px 5px 2px 3px black;
 							}
 						}
@@ -104,23 +95,9 @@
 
 @media (max-width: 1440px) {
 	#contact {
-		
-		.formTitle{
-		}
 		#contactContainer {
 			width: 95%;
-			.formContainer {
-				.form {
-					input, textarea {
-					}
-					textarea {
-					}
-					.button {
-					}
-				}
-			}
 			.socialMediaContainer {
-				
 				#socialHello {
 					font-size:40px;
 				}
@@ -132,19 +109,8 @@
 					#socialAppsHello {
 						margin-top: 10px;
 					}
-					#socialAppsApps {
-						svg {
-						}
-						
-					}
-
 					#cvGrab {
 						line-height: 45px;
-							p {
-								#downlCVButton {
-								
-								}
-							}
 					}
 				}
 			}
@@ -155,46 +121,15 @@
 @media (max-width: 880px) {
 	#contact {
 		height: auto;
-		.formTitle{
-		}
 		#contactContainer {
 			flex-direction: column-reverse;
 			.formContainer {
 				width: 90%;
 				margin: 0 auto;
-				.form {
-					input, textarea {
-					}
-					textarea {
-					}
-					.button {
-					}
-				}
 			}
 			.socialMediaContainer {
 				width: 90%;
 				margin: 0 auto;
-				#socialHello {
-				}
-				#socialMail {
-				}
-				#socialAppsPart {
-					#socialAppsHello {
-					}
-					#socialAppsApps {
-						svg {
-						}
-						
-					}
-
-					#cvGrab {
-							p {
-								#downlCVButton {
-								
-								}
-							}
-					}
-				}
 			}
 		}
 	}
@@ -202,22 +137,8 @@
 @media (max-width: 500px) {
 	#contact {
 		margin-bottom: 20px;
-		.formTitle{
-		}
 		#contactContainer {
-			.formContainer {
-			
-				.form {
-					input, textarea {
-					}
-					textarea {
-					}
-					.button {
-					}
-				}
-			}
 			.socialMediaContainer {
-				
 				#socialHello {
 					font-size: 27px;
 				}
@@ -238,16 +159,9 @@
 						svg {
 							margin: 5px;
 						}
-						
 					}
-
 					#cvGrab {
 						line-height: 40px;
-							p {
-								#downlCVButton {
-								
-								}
-							}
 					}
 				}
 			}

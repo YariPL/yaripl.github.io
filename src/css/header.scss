@@ -102,22 +102,11 @@
 }
 @media (max-width: 1440px) {
     #header {			
-    // burger
-    // menu
-    .menu {
-        
+        // burger
+        // menu
+        .menu {
             width: 20%;
             left:-20%;
-            // opacity: 0;
-            a {
-                
-            }
-        }
-        .showMenu {
-            
-        }
-        .hideMenu {
-            
         }
         @keyframes move {
             from {left: -20%;}
@@ -136,23 +125,14 @@
     // burger
     // menu
     .menu {
-        
             width: 40%;
             left:-40%;
-            // opacity: 0;
             a {
-                
                 height: 115px;
                 line-height: 115px;
                 
                 font-size: 50px;
             }
-        }
-        .showMenu {
-            
-        }
-        .hideMenu {
-            
         }
         @keyframes move {
             from {left: -40%;}
@@ -168,13 +148,11 @@
 
 @media (max-width: 768px) {
     #header {			
-    // burger
-    // menu
-    .menu {
-        
+        // burger
+        // menu
+        .menu {
             width: 70%;
             left:-70%;
-            // opacity: 0;
             a {
                 
                 height: 115px;
@@ -183,12 +161,7 @@
                 font-size: 50px;
             }
         }
-        .showMenu {
-            
-        }
-        .hideMenu {
-            
-        }
+        
         @keyframes move {
             from {left: -70%;}
             to {left: 0;}

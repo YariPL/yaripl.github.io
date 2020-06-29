@@ -2,13 +2,10 @@
     z-index: 1;
     width:100%;
     height:100vh;
-    //background-image: linear-gradient(to right top, #845ec2, #646cc5, #4875c1, #367cb7, #3880aa, #3d8aa4, #50929c, #679896, #84a597, #a2b19d, #bebdaa, #d5cabd);
     background: #c94b4b; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #c94b4b, #4b134f); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #c94b4b, #4b134f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: #273043;
-   /*  min-height: -webkit-fill-available;
-    min-height: 100vh; */
     .particles {
         height: 100%;
         width:100%;
@@ -18,29 +15,25 @@
         top: 50%;
         left: 10%;
         transform: translate(-10%, -50%);
-        /* font-size: 30px; */
         color: white;
         z-index: 1;
         .name  {
             font-size: 7em;
             line-height: 100px;
             margin-bottom: 40px;
-           
             .nameone {
                 background: -webkit-linear-gradient(#ffffff, #30354c);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
             .nametwo {
                 background: -webkit-linear-gradient(#ffffff, #30354c);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
         }
         .job {
-            // text-align: center;
             font-size: 2.3em;
-            
         }
     }
 }
@@ -57,37 +50,15 @@ canvas {
 @media (max-width: 1000px) { 
 
     #homePage {
-    
-    .title {
-      /*   position: absolute;
-        top: 50%;
-        left: 10%;
-        transform: translate(-10%, -50%);
-        color: white;
-        z-index: 1; */
-        .name  {
-            //font-size: 5em;
-            //line-height: 75px;
-            margin-bottom: 40px;
-           
-          /*   .nameone {
-                background: -webkit-linear-gradient(#ffffff, #30354c);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .title {
+            .name  {
+                margin-bottom: 40px;
             }
-            .nametwo {
-                background: -webkit-linear-gradient(#ffffff, #30354c);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            } */
-        }
-        .job {
-            // text-align: center;
-            font-size: 2.3em;
-            
+            .job {
+                font-size: 2.3em;
+            }
         }
     }
-}
 }
 
 @media (max-width:768px) {
@@ -95,29 +66,18 @@ canvas {
     #homePage {
         
         .title {
-        /*   position: absolute;
-            top: 50%;
-            left: 10%;
-            transform: translate(-10%, -50%);
-            color: white;
-            z-index: 1; */
             .name {
                 font-size: 5em;
                 line-height: 75px;
             }
             .job {
-                // text-align: center;
                 font-size: 1.6em;
-                
             }
         }
     }
-    
 }
 @media (max-width: 500px) { 
-
     #homePage {
-        
         .title {
             top: 50%;
             left: 40%;
@@ -126,24 +86,10 @@ canvas {
                 font-size: 3.5em;
                 line-height: 60px;
                 margin-bottom: 35px;
-            
-            /*   .nameone {
-                    background: -webkit-linear-gradient(#ffffff, #30354c);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                }
-                .nametwo {
-                    background: -webkit-linear-gradient(#ffffff, #30354c);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                } */
             }
             .job {
-                // text-align: center;
                 font-size: 1.6em;
-                
             }
         }
     }
-
  }
