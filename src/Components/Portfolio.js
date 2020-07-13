@@ -2,18 +2,19 @@ import React, { useState } from 'react';
 
 import taskVideo from "./../assets/videos/task-man-por.mp4";
 import pathVideo from "./../assets/videos/path-por.mp4";
+import runnerv1 from "./../assets/videos/runnerv1.mp4";
 
 export const Portfolio = () => {
 	const [portfolioState, setPortfolioState] = useState({
     projectsData: [
-      /* {
-        title: "404 T-REX 3d clone",
-        techStack: ["three.js", "webpack", "react", "sass"],
-        videoUrl: taskVideo,
-        descr: `Clone of the famous chrome's 404 game made in 3D with the help of Three.js framework`,
+      {
+        title: "T-REX ENDLESS RUNNER",
+        techStack: ["three.js", "webpack"],
+        videoUrl: runnerv1,
+        descr: `3D clone of google chrome browser t-rex game made in 3D with the help of Three.js framework`,
         linkCode: "https://github.com/YariPL/404-trex-clone",
-        linkUrl: "https://github.com/YariPL/404-trex-clone",
-      }, */
+        linkUrl: "https://dino3d.herokuapp.com/",
+      },
       {
         title: "Task manager",
         techStack: ["react", "mongodb", "nodejs", "express", "rest", "sass"],
